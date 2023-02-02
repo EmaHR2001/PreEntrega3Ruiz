@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+}
+
+@font-face {
+  font-family: "graphica";
+  src: url(../font/graphica.otf);
+}
+@font-face {
+  font-family: "prueba";
+  src: url(../font/ferro.ttf);
+}
+.prueba {
+  font-family: "prueba";
+}
+
+.ff-graphica {
+  font-family: "graphica";
+}
+
+.comienzo {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.comienzo .tabla {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 800px;
+  z-index: 2;
+  border: 1px solid rgb(121, 121, 121);
+  overflow: hidden;
+  top: -540px;
+  transition: top 1s;
+}
+.comienzo .tabla:hover {
+  top: 0px;
+}
+.comienzo .tabla h2 {
+  color: white;
+  background-color: #fa1c18;
+  text-align: center;
+  padding: 15px;
+}
+.comienzo .tabla .linea {
+  width: 100%;
+  height: 43px;
+  border-bottom: 1px solid #cacaca;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.comienzo .tabla .linea p {
+  display: inline;
+  padding-right: 20px;
+  font-family: "graphica";
+}
+.comienzo .tabla .linea p span {
+  width: 30px;
+  padding-left: 30px;
+  font-family: "graphica";
+}
+.comienzo .tabla i {
+  color: white;
+  width: 100%;
+  background-color: #fa1c18;
+  font-size: 2rem;
+  padding: 10px;
+}
+.comienzo h1 {
+  font-size: 9rem;
+}
+.comienzo .categorySelect {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.comienzo .categorySelect .category {
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comienzo .categorySelect .category i {
+  font-size: 4rem;
+  padding-right: 10px;
+}
+.comienzo .categorySelect .category img {
+  width: 80%;
+  height: 80%;
+}
+.comienzo .categorySelect .category .logo-color {
+  display: none;
+}
+.comienzo .categorySelect .category:hover {
+  transform: scale(1.2);
+  border: 5px solid black;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+.comienzo .categorySelect .category:hover .heartbeat {
+  animation: pulse 1s infinite;
+}
+.comienzo .categorySelect .category:hover .logo-color {
+  display: block;
+}
+.comienzo .categorySelect .category:hover .logo-black {
+  display: none;
+}
+.comienzo .categorySelect .b-blue:hover {
+  border: 5px solid rgb(252, 172, 0);
+  color: rgb(252, 172, 0);
+  background-color: rgb(30, 75, 173);
+}
+.comienzo .categorySelect .b-red:hover {
+  border: 5px solid #E42A26;
+  color: #E42A26;
+  background-color: rgb(112, 4, 4);
+}
+.comienzo .categorySelect .b-green:hover {
+  border: 5px solid rgb(100, 231, 100);
+  color: rgb(44, 201, 44);
+  background-color: rgb(4, 77, 4);
+}
+.comienzo .categorySelect .b-black:hover {
+  border: 5px solid rgb(219, 140, 21);
+  background-image: url(../image/avengers.gif);
+  background-size: cover;
+}
+
+.trivia {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.trivia .top {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.trivia .top .reloj {
+  position: absolute;
+  padding: 5px 25px;
+  background-color: white;
+  border: 1px solid rgb(121, 121, 121);
+  width: 100px;
+  border-top: none;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.trivia .top .reloj p {
+  font-size: 1.5rem;
+}
+.trivia .top .cuadro {
+  margin-top: 20px;
+  width: 900px;
+  border: 1px solid rgb(121, 121, 121);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.trivia .top .cuadro__imagen {
+  width: 100%;
+  height: 350px;
+  border-bottom: 1px solid black;
+}
+.trivia .top .cuadro__imagen img {
+  width: 100%;
+  height: 100%;
+}
+.trivia .top .cuadro h3 {
+  padding: 10px;
+}
+.trivia .opciones {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.trivia .opciones__content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 1000px;
+  margin: 10;
+}
+.trivia .opciones__content .opcion {
+  margin: 10px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(121, 121, 121);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.trivia .opciones__content .opcion:disabled {
+  background-color: #E42A26;
+}
+.trivia .opciones__content .opcion:hover {
+  background-color: #cacaca;
+  box-shadow: none;
+}
+
+.final {
+  display: none;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.final .cuadro {
+  position: relative;
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid rgb(121, 121, 121);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: hidden;
+}
+.final .cuadro h3 {
+  font-size: 3rem;
+  color: white;
+  border-bottom: 1px solid rgb(121, 121, 121);
+  background-color: #0024c7;
+}
+.final .cuadro p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.final .cuadro p span {
+  margin-left: 10px;
+}
+.final .cuadro .dificultad {
+  display: inline;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.final .cuadro .dificultad__f {
+  color: green;
+}
+.final .cuadro .dificultad__m {
+  color: yellow;
+}
+.final .cuadro .dificultad__d {
+  color: red;
+}
+.final .cuadro .ingresar {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  bottom: 0;
+}
+.final .cuadro .ingresar label {
+  display: block;
+  font-size: 1.2rem;
+  color: #525252;
+  margin-bottom: 10px;
+}
+.final .cuadro .ingresar .rellenar {
+  display: inline-block;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.final .cuadro .ingresar .botones button {
+  padding: 15px 70px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(121, 121, 121);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.final .cuadro .ingresar .botones__enviar:hover {
+  background-color: green;
+  color: white;
+}
+.final .cuadro .ingresar .botones__cancelar:hover {
+  background-color: red;
+  color: white;
+}
+
+.heart {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* header {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 2s;
+    z-index: 2;
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 40px;
+        font-size: 1.3rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: opacity 2s;
+    }
+
+    .oculto {
+        opacity: 0;
+    }
+
+    .barra {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+
+        &__texto {
+            p {
+                background-color: #0f0f0f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                padding: 0px 10px;
+                opacity: 1;
+            }
+        }
+
+        &__panel {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 15% 35% 35% 15%;
+
+            button {
+                font-size: 1rem;
+                border: 1px solid white;
+                color: white;
+                background-color: #181818;
+            }
+
+            .lados {
+                grid-row: span 2;
+            }
+        }
+    }
+} */
+
+/*# sourceMappingURL=style.css.map */

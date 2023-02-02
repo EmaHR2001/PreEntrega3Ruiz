@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c7ff1173b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="" href="" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Menu</title>
+    <meta name="description" content="">
+</head>
+
+<body>
+    <header id="inicio" class="comienzo">
+        <div class="tabla">
+            <h2>Top 10 Ranking</h2>
+            <div class="linea">
+                <p>Nombre</p><p>Categoria</p><p>Puntos</p><p>Tiempo</p>
+            </div>
+            <div class="linea linea__jugador"></div>
+            <div class="linea linea__jugador"></div>
+            <div class="linea linea__jugador"></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <div class="linea linea__jugador"><p></p></div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <h1 class="prueba heart">TrivialiS</h1>
+        <h2 class="ff-graphica">Elige la categoria</h2>
+        <div class="categorySelect">
+            <button class="category ff-graphica b-blue"><i class="fa-solid fa-landmark heartbeat"></i>Historia</button>
+            <button class="category ff-graphica b-red"><i class="fa-solid fa-gamepad heartbeat"></i>Juegos</button>
+            <button class="category b-black"><img class="logo-black" src="image/avengers-black.png"><img class="heartbeat logo-color" src="image/avengers.png"></button>
+            <button class="category ff-graphica b-yellow"><i class="fa-solid fa-comment heartbeat"></i>Cultura</button>
+            <button class="category ff-graphica b-green"><i class="fa-solid fa-earth-americas heartbeat"></i>Mundo</button>
+            <button class="category ff-graphica b-"><i class="fa-solid fa-clapperboard heartbeat"></i>Cine</button>
+        </div>
+    </header>
+
+    <main id="juego" class="trivia">
+        <section class="top">
+            <div id="reloj" class="reloj">
+                <p id="tiempo" class="ff-graphica">60</p>
+            </div>
+            <div class="cuadro">
+                <div class="cuadro__imagen">
+                    <img id="imagen" src=>
+                </div>
+                <h3 id="pregunta" class="ff-graphica"></h3>
+            </div>
+        </section>
+
+        <section class="opciones">
+            <div class="opciones__content">
+                <button class="opcion ff-graphica"> Relación matemática entre los</button>
+                <button class="opcion ff-graphica">Mjornir</button>
+                <button class="opcion ff-graphica">StormBreaker</button>
+                <button class="opcion ff-graphica">Miornir</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="puntuacion" class="final">
+        <div class="cuadro">
+            <h3 class="ff-graphica">Puntaje</h3>
+            <p class="ff-graphica">Categoria:<span class="dato ff-graphica">Avengers</span></p>
+            <p class="ff-graphica">Cantidad de aciertos</p>
+            <p class="dificultad dificultad__f ff-graphica">Faciles<span class="dato ff-graphica">3</span></p>
+            <p class="dificultad dificultad__m ff-graphica">Medias<span class="dato ff-graphica">3</span></p>
+            <p class="dificultad dificultad__d ff-graphica">Dificiles<span class="dato ff-graphica">3</span></p>
+            <p class="ff-graphica">Tiempo:<span class="dato">3:00</span></p>
+            <div class="ingresar">
+                <label class="ff-graphica" for="name">Ingresa tu nombre para guardar tu record en el ranking</label>
+                <input class="rellenar ff-graphica" type="text" name="nombre" id="name">
+                <div class="botones">
+                    <button class="botones__enviar enviar ff-graphica">Enviar</button>
+                    <button class="botones__cancelar enviar ff-graphica">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
