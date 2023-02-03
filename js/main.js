@@ -924,7 +924,7 @@ const categorias = [
     }
 ]
 
-let ranking = [["red", "asd", [2, 3, 4, 3], "20s"], ["blue", "rgb", [3, 4, 5, 4], "23s"]];
+let ranking = [];
 
 const category = document.querySelectorAll(".category");
 const inicio = document.getElementById("inicio");
