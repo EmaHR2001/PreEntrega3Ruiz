@@ -2,7 +2,7 @@ const categorias = [
     {
         categoria: "Historia",
         pregunta0: {
-            imagen: "image/harry-potter.jpg",
+            imagen: "image/bandera.jpg",
             pregunta: "¿Quien fue el primer presidente de Estados Unidos?",
             dificultad: "facil",
             respuesta: 0,
@@ -12,7 +12,7 @@ const categorias = [
             opcion3: "George H. Bush"
         },
         pregunta1: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/atentado.jpg",
             pregunta: `En que año se produjo el atentado de las torres gemelas?`,
             dificultad: "facil",
             respuesta: 2,
@@ -22,7 +22,7 @@ const categorias = [
             opcion3: "2010"
         },
         pregunta2: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/arco.jpg",
             pregunta: `¿De qué nacionalidad era Juana de Arco?`,
             dificultad: "facil",
             respuesta: 2,
@@ -32,7 +32,7 @@ const categorias = [
             opcion3: "Sueca"
         },
         pregunta3: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/isla.jpg",
             pregunta: `¿Qué isla generó un conflicto entre Reino Unido y Argentina?`,
             dificultad: "facil",
             respuesta: 0,
@@ -42,7 +42,7 @@ const categorias = [
             opcion3: "Tahití"
         },
         pregunta4: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/volcan.jpg",
             pregunta: `¿Qué volcán devastó Pompeya?`,
             dificultad: "facil",
             respuesta: 2,
@@ -52,7 +52,7 @@ const categorias = [
             opcion3: "El Kilimanjaro"
         },
         pregunta5: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/cavernicola.jpg",
             pregunta: `¿Dónde se han encontrado principalmente pinturas del período Paleolítico?`,
             dificultad: "medio",
             respuesta: 1,
@@ -62,7 +62,7 @@ const categorias = [
             opcion3: "Pieles"
         },
         pregunta6: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/caligula.jpg",
             pregunta: `¿A quién nombro senador Calígula?`,
             dificultad: "medio",
             respuesta: 3,
@@ -72,7 +72,7 @@ const categorias = [
             opcion3: "Su caballo"
         },
         pregunta7: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/luna.jpg",
             pregunta: `¿Quién fue el primer hombre que pisó la luna?`,
             dificultad: "medio",
             respuesta: 2,
@@ -82,7 +82,7 @@ const categorias = [
             opcion3: "Donald Trump"
         },
         pregunta8: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/italia.jpg",
             pregunta: `¿Que dictador italiano que lideraba Italia al comienzo de la Segunda Guerra Mundial?`,
             dificultad: "medio",
             respuesta: 1,
@@ -92,7 +92,7 @@ const categorias = [
             opcion3: "Humberto I"
         },
         pregunta9: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/dallas.jpg",
             pregunta: `¿Qué presidente estadounidense fue asesinado en Dallas?`,
             dificultad: "medio",
             respuesta: 0,
@@ -102,7 +102,7 @@ const categorias = [
             opcion3: "Donald Trump"
         },
         pregunta10: {
-            imagen: "image/que-pelicula.jpg",
+            imagen: "image/industrial.jpg",
             pregunta: `¿Que evento marco el inicio de la revolución industrial?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -112,7 +112,7 @@ const categorias = [
             opcion3: "El automóvil"
         },
         pregunta11: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/aztecas.jpg",
             pregunta: `¿Qué ciudad fundaron los aztecas??`,
             dificultad: "dificil",
             respuesta: 1,
@@ -122,7 +122,7 @@ const categorias = [
             opcion3: "Quetzalcoatl"
         },
         pregunta12: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/imprenta.jpg",
             pregunta: `¿Quién inventó la imprenta?`,
             dificultad: "dificil",
             respuesta: 0,
@@ -132,7 +132,7 @@ const categorias = [
             opcion3: "Los griegos"
         },
         pregunta13: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/francia.jpg",
             pregunta: `En que año se produjo la revolución francesa?`,
             dificultad: "dificil",
             respuesta: 0,
@@ -142,7 +142,7 @@ const categorias = [
             opcion3: "1765"
         },
         pregunta14: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/eclesiastica.jpg",
             pregunta: `¿Qué institución eclesiástica mandó a la hoguera a "brujas","impuros" y "herejes"?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -156,7 +156,7 @@ const categorias = [
     {
         categoria: "Juegos",
         pregunta0: {
-            imagen: "image/harry-potter.jpg",
+            imagen: "image/zelda.jpg",
             pregunta: `¿Quien es el protagonista del juego "Legends of Zelda"}?`,
             dificultad: "facil",
             respuesta: 1,
@@ -166,7 +166,7 @@ const categorias = [
             opcion3: "Mario"
         },
         pregunta1: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/portal.jpg",
             pregunta: `¿Cuales son los colores de los portales del juego "Portal"?`,
             dificultad: "facil",
             respuesta: 2,
@@ -176,7 +176,7 @@ const categorias = [
             opcion3: "Verde y Azul"
         },
         pregunta2: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/mario.jpg",
             pregunta: `¿Que nombre tiene el juego de carreras de Mario?`,
             dificultad: "facil",
             respuesta: 3,
@@ -186,7 +186,7 @@ const categorias = [
             opcion3: "Mario Karts"
         },
         pregunta3: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/minecraft.jpg",
             pregunta: `¿Cuál es el nombre del co-protagonista del juego "Minecraft"?`,
             dificultad: "facil",
             respuesta: 2,
@@ -196,7 +196,7 @@ const categorias = [
             opcion3: "Hannah"
         },
         pregunta4: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/the-last-of-us.jpg",
             pregunta: `¿Cuál es el nombre del protagonista de "The Last of Us"?`,
             dificultad: "facil",
             respuesta: 0,
@@ -206,7 +206,7 @@ const categorias = [
             opcion3: "Connor"
         },
         pregunta5: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/smash.jpg",
             pregunta: `¿Cuál es el juego de la imagen?`,
             dificultad: "medio",
             respuesta: 3,
@@ -216,7 +216,7 @@ const categorias = [
             opcion3: "Super Smash Bros"
         },
         pregunta6: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/toxic.jpg",
             pregunta: `¿Por que es tan toxico League of Legends?`,
             dificultad: "medio",
             respuesta: 3,
@@ -226,7 +226,7 @@ const categorias = [
             opcion3: "Todas las anteriores"
         },
         pregunta7: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/minecraft.jpg",
             pregunta: `¿Cuantos puntos de vida tienen los personaje de "Minecraft"?`,
             dificultad: "medio",
             respuesta: 1,
@@ -246,7 +246,7 @@ const categorias = [
             opcion3: "Pikachu"
         },
         pregunta9: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/map.jpg",
             pregunta: `¿Cual es el juego con el mapa mas grande existente?`,
             dificultad: "medio",
             respuesta: 2,
@@ -256,7 +256,7 @@ const categorias = [
             opcion3: "Minecraft"
         },
         pregunta10: {
-            imagen: "image/que-pelicula.jpg",
+            imagen: "image/rockstar.jpg",
             pregunta: `¿Cual de estos videojuegos a desarrollado Rockstar?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -266,7 +266,7 @@ const categorias = [
             opcion3: "Far Cry"
         },
         pregunta11: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/xbox.jpg",
             pregunta: `¿Qué significa la luz roja en la consola Xbox 360?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -276,7 +276,7 @@ const categorias = [
             opcion3: "Bateria agotada"
         },
         pregunta12: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/grindear.jpg",
             pregunta: `¿Qué significa grindear?`,
             dificultad: "dificil",
             respuesta: 0,
@@ -286,7 +286,7 @@ const categorias = [
             opcion3: "Perder apropósito"
         },
         pregunta13: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/mariobros.jpg",
             pregunta: `¿En que año salio el primer juego protagonizado por Mario?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -296,7 +296,7 @@ const categorias = [
             opcion3: "1999"
         },
         pregunta14: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/hollow-knight.jpg",
             pregunta: `¿Como se llama el pueblo inicial de Hollow Knight?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -310,7 +310,7 @@ const categorias = [
     {
         categoria: "Avengers",
         pregunta0: {
-            imagen: "image/harry-potter.jpg",
+            imagen: "image/avengers.jpg",
             pregunta: `¿Quien fundo los Vengadores?`,
             dificultad: "facil",
             respuesta: 2,
@@ -320,7 +320,7 @@ const categorias = [
             opcion3: "Colson"
         },
         pregunta1: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/hulk.jpg",
             pregunta: `¿Cual de estos personajes no es un vengador?`,
             dificultad: "facil",
             respuesta: 2,
@@ -330,7 +330,7 @@ const categorias = [
             opcion3: "Viuda Negra"
         },
         pregunta2: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/thanos.jpg",
             pregunta: `¿Cuantos personajes han usando un guante con todas las gemas?`,
             dificultad: "facil",
             respuesta: 2,
@@ -340,7 +340,7 @@ const categorias = [
             opcion3: "4"
         },
         pregunta3: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/natasha.jpg",
             pregunta: `¿Cuál es la nacionalidad de Natasha Romanoff?`,
             dificultad: "facil",
             respuesta: 0,
@@ -350,7 +350,7 @@ const categorias = [
             opcion3: "Alemana"
         },
         pregunta4: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/referencia.jpg",
             pregunta: `¿Quien dice la famosa frase "Entendí la referencia"?`,
             dificultad: "facil",
             respuesta: 2,
@@ -360,7 +360,7 @@ const categorias = [
             opcion3: "Thor"
         },
         pregunta5: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/martillo.jpg",
             pregunta: `¿Como se llama el martillo de Thor?`,
             dificultad: "medio",
             respuesta: 3,
@@ -370,7 +370,7 @@ const categorias = [
             opcion3: "Miornir"
         },
         pregunta6: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/fury.jpg",
             pregunta: `¿Como perdió el ojo Nick Fury?`,
             dificultad: "medio",
             respuesta: 2,
@@ -380,7 +380,7 @@ const categorias = [
             opcion3: "Por una cabra"
         },
         pregunta7: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/strange.jpg",
             pregunta: `¿Cuantos futuros vio Dr.Strange para vencer a Thanos?`,
             dificultad: "medio",
             respuesta: 3,
@@ -390,7 +390,7 @@ const categorias = [
             opcion3: "14,000,605"
         },
         pregunta8: {
-            imagen: "image/pokemon.jpg",
+            imagen: "image/triste.jpg",
             pregunta: `¿Quien asesino a los padres de Iron Man?`,
             dificultad: "medio",
             respuesta: 1,
@@ -400,7 +400,7 @@ const categorias = [
             opcion3: "El amigo de su padre"
         },
         pregunta9: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/janefoster.jpg",
             pregunta: `¿En que tenia doctorado Jane Foster?`,
             dificultad: "media",
             respuesta: 0,
@@ -410,7 +410,7 @@ const categorias = [
             opcion3: "Medicina"
         },
         pregunta10: {
-            imagen: "image/que-pelicula.jpg",
+            imagen: "image/armaduras.jpg",
             pregunta: `¿Cuantas armaduras fabrico Tony Stark?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -420,7 +420,7 @@ const categorias = [
             opcion3: "54"
         },
         pregunta11: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/wandavision.jpg",
             pregunta: `¿En que comic se inspira la seria Wandavision?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -430,7 +430,7 @@ const categorias = [
             opcion3: "The WandaTV"
         },
         pregunta12: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/stanlee.jpg",
             pregunta: `¿Cuantos cameos a tenido Stan Lee?`,
             dificultad: "dificil",
             respuesta: 3,
@@ -440,7 +440,7 @@ const categorias = [
             opcion3: "96"
         },
         pregunta13: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/shangchi.jpg",
             pregunta: `¿Como se llama el pueblo oculto que aparece en "Shang-Chi y los 10 anillos"?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -450,7 +450,7 @@ const categorias = [
             opcion3: "Ta Oming"
         },
         pregunta14: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/scott.jpg",
             pregunta: `¿Cuantos años estuvo en la cárcel Scott?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -462,9 +462,9 @@ const categorias = [
     },
 
     {
-        categoria: "Cine",
+        categoria: "Cultura",
         pregunta0: {
-            imagen: "image/harry-potter.jpg",
+            imagen: "image/plataformas.jpg",
             pregunta: "¿Cual fue la primer plataforma de streaming de series y películas?",
             dificultad: "facil",
             respuesta: 2,
@@ -474,7 +474,7 @@ const categorias = [
             opcion3: "Star+"
         },
         pregunta1: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/olimpiadas.jpg",
             pregunta: `¿Donde se originaron los juegos olímpicos?`,
             dificultad: "facil",
             respuesta: 1,
@@ -484,7 +484,7 @@ const categorias = [
             opcion3: "Roma"
         },
         pregunta2: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/capilla.jpg",
             pregunta: `¿Quien pinto la Capilla Sixtina?`,
             dificultad: "facil",
             respuesta: 2,
@@ -494,7 +494,7 @@ const categorias = [
             opcion3: "Raffaello Sanzio"
         },
         pregunta3: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/matematicas.jpg",
             pregunta: `¿Como se denomina al resultado de una multiplicación?`,
             dificultad: "facil",
             respuesta: 1,
@@ -504,7 +504,7 @@ const categorias = [
             opcion3: "Resto"
         },
         pregunta4: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/disco.jpg",
             pregunta: `¿Cual es el disco mas vendido de la historia?`,
             dificultad: "facil",
             respuesta: 0,
@@ -514,7 +514,7 @@ const categorias = [
             opcion3: "Rumors"
         },
         pregunta5: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/jesus.jpg",
             pregunta: `¿Cual de los 12 apóstoles traiciono a Jesus?`,
             dificultad: "medio",
             respuesta: 1,
@@ -524,7 +524,7 @@ const categorias = [
             opcion3: "Pedro"
         },
         pregunta6: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/divina-comedia.jpg",
             pregunta: `¿Quien escribió La Divina Comedia?`,
             dificultad: "medio",
             respuesta: 2,
@@ -534,7 +534,7 @@ const categorias = [
             opcion3: "Miguel de Cervantes"
         },
         pregunta7: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/sherlock.jpg",
             pregunta: `¿Quien es el mayor enemigo de Sherlock Homes?`,
             dificultad: "medio",
             respuesta: 0,
@@ -544,7 +544,7 @@ const categorias = [
             opcion3: "Charles Augustus Milverton"
         },
         pregunta8: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/esqueleto.jpg",
             pregunta: `¿Que cantidad de huesos tiene el cuerpo humano?`,
             dificultad: "medio",
             respuesta: 1,
@@ -554,7 +554,7 @@ const categorias = [
             opcion3: "166"
         },
         pregunta9: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/odisea.jpg",
             pregunta: `¿Quien escribió La Odisea?`,
             dificultad: "medio",
             respuesta: 0,
@@ -564,7 +564,7 @@ const categorias = [
             opcion3: "Miguel de Cervantes"
         },
         pregunta10: {
-            imagen: "image/que-pelicula.jpg",
+            imagen: "image/sabores.jpg",
             pregunta: `¿Cuales son los 5 tipos de sabores primarios?`,
             dificultad: "dificil",
             respuesta: 3,
@@ -574,7 +574,7 @@ const categorias = [
             opcion3: "Dulce, amargo, ácido, salado y umami"
         },
         pregunta11: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/hemeroteca.jpg",
             pregunta: `¿Cómo se le llama a una colección de revistas, diarios y notas periódicas?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -584,7 +584,7 @@ const categorias = [
             opcion3: "Estantería"
         },
         pregunta12: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/metales.jpg",
             pregunta: `¿Cual es el metal mas caro del mundo?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -594,7 +594,7 @@ const categorias = [
             opcion3: "Peltre"
         },
         pregunta13: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/coca-cola.jpg",
             pregunta: `¿En que año salio Coca-Cola al mercado?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -604,7 +604,161 @@ const categorias = [
             opcion3: "1777"
         },
         pregunta14: {
+            imagen: "image/estrellas.jpg",
+            pregunta: `¿Cuál es la segunda estrella más próxima a la Tierra?`,
+            dificultad: "dificil",
+            respuesta: 2,
+            opcion0: "Sirio",
+            opcion1: "Epsilon Indi",
+            opcion2: "Alpha Centauri",
+            opcion3: "Ran"
+        }
+    },
+
+    {
+        categoria: "Cine",
+        pregunta0: {
+            imagen: "image/harry-potter.jpg",
+            pregunta: "¿Cuantas películas tuvo Harry Potter?",
+            dificultad: "facil",
+            respuesta: 2,
+            opcion0: "6",
+            opcion1: "7",
+            opcion2: "8",
+            opcion3: "9"
+        },
+        pregunta1: {
+            imagen: "image/matrix.jpg",
+            pregunta: `¿Quien fue el actor que protagonizo la famosa película "Matrix"?`,
+            dificultad: "facil",
+            respuesta: 1,
+            opcion0: "Laurence Fishburne",
+            opcion1: "Keanu Reeves",
+            opcion2: "Christian Bale",
+            opcion3: "Carrie-Anne Moss"
+        },
+        pregunta2: {
+            imagen: "image/cine.jpg",
+            pregunta: `¿Cual es la película mas taquillera de todos los tiempos"?`,
+            dificultad: "facil",
+            respuesta: 3,
+            opcion0: "Titanic",
+            opcion1: "Avengers: Endgame",
+            opcion2: "Star Wars: El despertar de la fuerza",
+            opcion3: "Avatar"
+        },
+        pregunta3: {
             imagen: "image/sexto-sentido.jpg",
+            pregunta: `¿A que pelicula pertenece la famosa frase: "Veo gente muerta"?`,
+            dificultad: "facil",
+            respuesta: 1,
+            opcion0: "Amitiville",
+            opcion1: "El Sexto Sentido",
+            opcion2: "El Resplandor",
+            opcion3: "Poltergeist"
+        },
+        pregunta4: {
+            imagen: "image/american.jpg",
+            pregunta: `¿Que personaje interpreto Christian Bale en "American Psycho"?`,
+            dificultad: "facil",
+            respuesta: 0,
+            opcion0: "Patrick Bateman",
+            opcion1: "Paul Allen",
+            opcion2: "Detective Donald Kimball",
+            opcion3: "Timothy Bryce"
+        },
+        pregunta5: {
+            imagen: "image/titanic.jpg",
+            pregunta: `¿Cuanta es la duración de la película "Titanic"?`,
+            dificultad: "medio",
+            respuesta: 1,
+            opcion0: "180 minutos",
+            opcion1: "194 minutos",
+            opcion2: "72 minutos",
+            opcion3: "120 minutos"
+        },
+        pregunta6: {
+            imagen: "image/pilgrim.jpg",
+            pregunta: `¿A cuantos exes tuvo que derrotar Scott Pilgrim en "Scott Pilgrim vs. the World"?`,
+            dificultad: "medio",
+            respuesta: 1,
+            opcion0: "6",
+            opcion1: "7",
+            opcion2: "9",
+            opcion3: "5"
+        },
+        pregunta7: {
+            imagen: "image/oscars.jpg",
+            pregunta: `¿Que película gano el Oscar a mejor película en 2020?`,
+            dificultad: "medio",
+            respuesta: 3,
+            opcion0: "Érase una vez en Hollywood",
+            opcion1: "Joker",
+            opcion2: "1917",
+            opcion3: "Parásitos"
+        },
+        pregunta8: {
+            imagen: "image/fragmentado.jpg",
+            pregunta: `¿Cuantas personalidades tenia el protagonista de "Fragmentado"?`,
+            dificultad: "medio",
+            respuesta: 1,
+            opcion0: "155",
+            opcion1: "24",
+            opcion2: "10",
+            opcion3: "32"
+        },
+        pregunta9: {
+            imagen: "image/oscars.jpg",
+            pregunta: `¿Cuantas películas argentinas han ganado el Oscar?`,
+            dificultad: "medio",
+            respuesta: 0,
+            opcion0: "2",
+            opcion1: "4",
+            opcion2: "3",
+            opcion3: "5"
+        },
+        pregunta10: {
+            imagen: "image/que-pelicula.jpg",
+            pregunta: `¿A que película pertenece esta imagen?`,
+            dificultad: "dificil",
+            respuesta: 1,
+            opcion0: "Hasta el ultimo hombre",
+            opcion1: "El Gran Pez",
+            opcion2: "La milla verde",
+            opcion3: "El Show de Truman"
+        },
+        pregunta11: {
+            imagen: "image/odiseaespacio.jpg",
+            pregunta: `¿Quien dirigió "2001: Una Odisea del Espacio"?`,
+            dificultad: "dificil",
+            respuesta: 2,
+            opcion0: "George Lucas",
+            opcion1: "James Cameron",
+            opcion2: "Stanley Kubrick",
+            opcion3: "Ridley Scott"
+        },
+        pregunta12: {
+            imagen: "image/mouse.jpg",
+            pregunta: `¿En que año fue la primer aparición del iconico personaje Mickey Mouse?`,
+            dificultad: "dificil",
+            respuesta: 2,
+            opcion0: "1918",
+            opcion1: "1965",
+            opcion2: "1928",
+            opcion3: "1947"
+        },
+        pregunta13: {
+            imagen: "image/cine.jpg",
+            pregunta: `¿A quien se le a considerado el padre del cine?`,
+            dificultad: "dificil",
+            respuesta: 1,
+            opcion0: "Auguste y Louis Lumière",
+            opcion1: "George Méliès",
+            opcion2: "David Wark Griffith",
+            opcion3: "Louis Le Prince"
+        },
+        pregunta14: {
+            imagen: "image/oscars.jpg",
             pregunta: `¿Cual a sido el actor que a ganado mas Oscar?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -638,7 +792,7 @@ const categorias = [
             opcion3: "Carrie-Anne Moss"
         },
         pregunta2: {
-            imagen: "image/matrix.jpg",
+            imagen: "image/cine.jpg",
             pregunta: `¿Cual es la película mas taquillera de todos los tiempos"?`,
             dificultad: "facil",
             respuesta: 3,
@@ -658,7 +812,7 @@ const categorias = [
             opcion3: "Poltergeist"
         },
         pregunta4: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/american.jpg",
             pregunta: `¿Que personaje interpreto Christian Bale en "American Psycho"?`,
             dificultad: "facil",
             respuesta: 0,
@@ -668,7 +822,7 @@ const categorias = [
             opcion3: "Timothy Bryce"
         },
         pregunta5: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/titanic.jpg",
             pregunta: `¿Cuanta es la duración de la película "Titanic"?`,
             dificultad: "medio",
             respuesta: 1,
@@ -678,7 +832,7 @@ const categorias = [
             opcion3: "120 minutos"
         },
         pregunta6: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/pilgrim.jpg",
             pregunta: `¿A cuantos exes tuvo que derrotar Scott Pilgrim en "Scott Pilgrim vs. the World"?`,
             dificultad: "medio",
             respuesta: 1,
@@ -688,7 +842,7 @@ const categorias = [
             opcion3: "5"
         },
         pregunta7: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/oscars.jpg",
             pregunta: `¿Que película gano el Oscar a mejor película en 2020?`,
             dificultad: "medio",
             respuesta: 3,
@@ -698,7 +852,7 @@ const categorias = [
             opcion3: "Parásitos"
         },
         pregunta8: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/fragmentado.jpg",
             pregunta: `¿Cuantas personalidades tenia el protagonista de "Fragmentado"?`,
             dificultad: "medio",
             respuesta: 1,
@@ -708,7 +862,7 @@ const categorias = [
             opcion3: "32"
         },
         pregunta9: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/oscars.jpg",
             pregunta: `¿Cuantas películas argentinas han ganado el Oscar?`,
             dificultad: "medio",
             respuesta: 0,
@@ -722,13 +876,13 @@ const categorias = [
             pregunta: `¿A que película pertenece esta imagen?`,
             dificultad: "dificil",
             respuesta: 1,
-            opcion0: "2",
+            opcion0: "Hasta el ultimo hombre",
             opcion1: "El Gran Pez",
-            opcion2: "3",
-            opcion3: "5"
+            opcion2: "La milla verde",
+            opcion3: "El Show de Truman"
         },
         pregunta11: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/odiseaespacio.jpg",
             pregunta: `¿Quien dirigió "2001: Una Odisea del Espacio"?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -738,7 +892,7 @@ const categorias = [
             opcion3: "Ridley Scott"
         },
         pregunta12: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/mouse.jpg",
             pregunta: `¿En que año fue la primer aparición del iconico personaje Mickey Mouse?`,
             dificultad: "dificil",
             respuesta: 2,
@@ -748,7 +902,7 @@ const categorias = [
             opcion3: "1947"
         },
         pregunta13: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/cine.jpg",
             pregunta: `¿A quien se le a considerado el padre del cine?`,
             dificultad: "dificil",
             respuesta: 1,
@@ -758,7 +912,7 @@ const categorias = [
             opcion3: "Louis Le Prince"
         },
         pregunta14: {
-            imagen: "image/sexto-sentido.jpg",
+            imagen: "image/oscars.jpg",
             pregunta: `¿Cual a sido el actor que a ganado mas Oscar?`,
             dificultad: "dificil",
             respuesta: 2,

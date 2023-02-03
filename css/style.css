@@ -130,10 +130,20 @@
   color: #E42A26;
   background-color: rgb(112, 4, 4);
 }
+.comienzo .categorySelect .b-yellow:hover {
+  border: 5px solid rgb(3, 35, 211);
+  color: rgb(3, 35, 211);
+  background-color: rgb(219, 187, 3);
+}
 .comienzo .categorySelect .b-green:hover {
   border: 5px solid rgb(100, 231, 100);
   color: rgb(44, 201, 44);
   background-color: rgb(4, 77, 4);
+}
+.comienzo .categorySelect .b-violet:hover {
+  border: 5px solid rgb(231, 177, 0);
+  color: rgb(231, 177, 0);
+  background-color: rgb(99, 0, 124);
 }
 .comienzo .categorySelect .b-black:hover {
   border: 5px solid rgb(219, 140, 21);
