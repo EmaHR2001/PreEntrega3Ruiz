@@ -10,299 +10,441 @@
   src: url(../font/graphica.otf);
 }
 @font-face {
-  font-family: "prueba";
-  src: url(../font/ferro.ttf);
+  font-family: "gobold";
+  src: url(../font/gobold.otf);
 }
-.prueba {
-  font-family: "prueba";
+@font-face {
+  font-family: "category";
+  src: url(../font/gobold2.otf);
+}
+@font-face {
+  font-family: "quest";
+  src: url(../font/coolvetica.otf);
+}
+@font-face {
+  font-family: "blocky";
+  src: url(../font/blocky.otf);
+}
+.ff-category {
+  font-family: "category";
+}
+
+.ff-quest {
+  font-family: "quest";
 }
 
 .ff-graphica {
   font-family: "graphica";
 }
 
-.comienzo {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.comienzo .tabla {
-  background-color: white;
-  position: absolute;
-  text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 800px;
-  z-index: 2;
-  border: 1px solid rgb(121, 121, 121);
-  overflow: hidden;
-  top: -540px;
-  transition: top 1s;
-}
-.comienzo .tabla:hover {
-  top: 0px;
-}
-.comienzo .tabla h2 {
-  color: white;
-  background-color: #fa1c18;
-  text-align: center;
-  padding: 15px;
-}
-.comienzo .tabla .linea {
-  width: 100%;
-  height: 43px;
-  border-bottom: 1px solid #cacaca;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-.comienzo .tabla .linea p {
-  display: inline;
-  padding-right: 20px;
-  font-family: "graphica";
-}
-.comienzo .tabla .linea p span {
-  width: 30px;
-  padding-left: 30px;
-  font-family: "graphica";
-}
-.comienzo .tabla i {
-  color: white;
-  width: 100%;
-  background-color: #fa1c18;
-  font-size: 2rem;
-  padding: 10px;
-}
-.comienzo h1 {
-  font-size: 9rem;
-}
-.comienzo .categorySelect {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-.comienzo .categorySelect .category {
-  width: 250px;
-  height: 100px;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 10px;
-  font-size: 2rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.comienzo .categorySelect .category i {
-  font-size: 4rem;
-  padding-right: 10px;
-}
-.comienzo .categorySelect .category img {
-  width: 80%;
-  height: 80%;
-}
-.comienzo .categorySelect .category .logo-color {
-  display: none;
-}
-.comienzo .categorySelect .category:hover {
-  transform: scale(1.2);
-  border: 5px solid black;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-}
-.comienzo .categorySelect .category:hover .heartbeat {
-  animation: pulse 1s infinite;
-}
-.comienzo .categorySelect .category:hover .logo-color {
-  display: block;
-}
-.comienzo .categorySelect .category:hover .logo-black {
-  display: none;
-}
-.comienzo .categorySelect .b-blue:hover {
-  border: 5px solid rgb(252, 172, 0);
-  color: rgb(252, 172, 0);
-  background-color: rgb(30, 75, 173);
-}
-.comienzo .categorySelect .b-red:hover {
-  border: 5px solid #E42A26;
-  color: #E42A26;
-  background-color: rgb(112, 4, 4);
-}
-.comienzo .categorySelect .b-yellow:hover {
-  border: 5px solid rgb(3, 35, 211);
-  color: rgb(3, 35, 211);
-  background-color: rgb(219, 187, 3);
-}
-.comienzo .categorySelect .b-green:hover {
-  border: 5px solid rgb(100, 231, 100);
-  color: rgb(44, 201, 44);
-  background-color: rgb(4, 77, 4);
-}
-.comienzo .categorySelect .b-violet:hover {
-  border: 5px solid rgb(231, 177, 0);
-  color: rgb(231, 177, 0);
-  background-color: rgb(99, 0, 124);
-}
-.comienzo .categorySelect .b-black:hover {
-  border: 5px solid rgb(219, 140, 21);
-  background-image: url(../image/avengers.gif);
+body {
+  height: 100%;
+  background-image: url(../image/fondo2.jpg);
   background-size: cover;
 }
 
-.trivia {
-  display: none;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-.trivia .top {
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-.trivia .top .reloj {
-  position: absolute;
-  padding: 5px 25px;
-  background-color: white;
-  border: 1px solid rgb(121, 121, 121);
-  width: 100px;
-  border-top: none;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-}
-.trivia .top .reloj p {
-  font-size: 1.5rem;
-}
-.trivia .top .cuadro {
+.boton {
   margin-top: 20px;
-  width: 900px;
-  border: 1px solid rgb(121, 121, 121);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
   border-radius: 10px;
-  overflow: hidden;
+  border: 2px solid white;
+  font-family: "category";
 }
-.trivia .top .cuadro__imagen {
-  width: 100%;
-  height: 350px;
-  border-bottom: 1px solid black;
+.boton:hover {
+  color: white;
+  transform: scale(1.1);
 }
-.trivia .top .cuadro__imagen img {
+.boton__desactivado {
+  cursor: default;
+  border: 2px solid #6d6d6d;
+  color: #6d6d6d;
+  background-color: #868686;
+}
+.boton__desactivado:hover {
+  color: #6d6d6d;
+  transform: none;
+}
+.boton__jugar {
+  margin-right: 10px;
+}
+.boton__jugar:hover {
+  background-color: #ca0000;
+}
+.boton__jugar {
+  margin-right: 10px;
+}
+.boton__jugar:hover {
+  background-color: #ca0000;
+}
+.boton__ranking:hover {
+  margin-left: 10px;
+  background-color: #0024c7;
+}
+.boton__volver {
+  margin-left: 30px;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  position: absolute;
+  padding: 10px 50px;
+}
+.boton__volver:hover {
+  background-color: #0024c7;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+header h1 {
+  margin-bottom: 100px;
+  font-family: "blocky";
+  font-size: 10rem;
+  color: white;
+}
+
+main {
   width: 100%;
   height: 100%;
 }
-.trivia .top .cuadro h3 {
-  padding: 10px;
-}
-.trivia .opciones {
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
-}
-.trivia .opciones__content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 1000px;
-  margin: 10;
-}
-.trivia .opciones__content .opcion {
-  margin: 10px;
-  padding: 20px 10px;
-  border-radius: 10px;
-  border: 1px solid rgb(121, 121, 121);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-  font-size: 1rem;
-  cursor: pointer;
-}
-.trivia .opciones__content .opcion:disabled {
-  background-color: #E42A26;
-}
-.trivia .opciones__content .opcion:hover {
-  background-color: #cacaca;
-  box-shadow: none;
-}
 
-.final {
+.modos {
   display: none;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
   width: 100%;
-}
-.final .cuadro {
-  position: relative;
-  margin-top: 20px;
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
-  border: 1px solid rgb(121, 121, 121);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   overflow: hidden;
 }
-.final .cuadro h3 {
-  font-size: 3rem;
+.modos h2 {
   color: white;
-  border-bottom: 1px solid rgb(121, 121, 121);
-  background-color: #0024c7;
+  margin-bottom: 20px;
 }
-.final .cuadro p {
+.modos .card__content {
+  display: flex;
+  justify-content: center;
+}
+.modos .card__modo {
+  position: relative;
+  width: 240px;
+  height: 420px;
+  margin: 0px 20px;
+  perspective: 1000px;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.modos .card__modo .card__front,
+.modos .card__modo .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 1s ease-out;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.modos .card__modo .card__front .fondo,
+.modos .card__modo .card__back .fondo {
+  height: 100%;
+  width: 100%;
+}
+.modos .card__modo .card__front .borde,
+.modos .card__modo .card__back .borde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modos .card__modo .card__front .deco,
+.modos .card__modo .card__back .deco {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  padding: 2px;
   font-size: 1.5rem;
-  margin-top: 20px;
+  font-family: "gobold";
 }
-.final .cuadro p span {
-  margin-left: 10px;
+.modos .card__modo .card__front .deco__top,
+.modos .card__modo .card__back .deco__top {
+  z-index: 2;
+  top: 10%;
 }
-.final .cuadro .dificultad {
+.modos .card__modo .card__front .deco__bot,
+.modos .card__modo .card__back .deco__bot {
+  bottom: 10%;
+}
+.modos .card__modo .card__front .info,
+.modos .card__modo .card__back .info {
+  color: white;
+  margin: 10px;
+  transform: translate(0%, 40%);
+}
+.modos .card__modo .card__back {
+  transform: rotateY(180deg);
+}
+.modos .card__modo:hover .card__front {
+  transform: rotateY(180deg);
+}
+.modos .card__modo:hover .card__back {
+  transform: rotateY(360deg);
+}
+.modos .card__modo:hover {
+  filter: none;
+}
+
+.categorias {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.categorias h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.categorias .mover {
+  width: 70px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+.categorias .mover__right {
+  right: 0;
+}
+.categorias .mover__left {
+  left: 0;
+}
+.categorias .cat__content {
+  display: flex;
+  margin-left: 300px;
+  transition: transform 0.5s;
+}
+.categorias .cat__content .card__category {
+  position: relative;
+  width: 240px;
+  height: 420px;
+  margin: 0px 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(1);
+}
+.categorias .cat__content .card__category .fondo {
+  height: 100%;
+  width: 100%;
+}
+.categorias .cat__content .card__category .borde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.categorias .cat__content .card__category .deco {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  padding: 2px;
+  font-size: 1.5rem;
+  font-family: "gobold";
+}
+.categorias .cat__content .card__category .deco__top {
+  z-index: 2;
+  top: 10%;
+}
+.categorias .cat__content .card__category .deco__bot {
+  bottom: 10%;
+}
+.categorias .cat__content .card__category:hover {
+  filter: none;
+}
+
+.juego {
+  display: none;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+.juego .top {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 2;
+  background-color: rgba(36, 36, 36, 0.3647058824);
+  margin-bottom: 20px;
+}
+.juego .top h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+.juego .top .tiempo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.juego .top .tiempo img {
+  width: 80px;
+}
+.juego .top .tiempo p {
   display: inline;
-  margin-top: 20px;
-  margin-left: 30px;
+  font-size: 4rem;
+  color: white;
 }
-.final .cuadro .dificultad__f {
-  color: green;
+.juego .top .vida {
+  padding: 10px;
 }
-.final .cuadro .dificultad__m {
-  color: yellow;
+.juego .cartas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 100px;
 }
-.final .cuadro .dificultad__d {
-  color: red;
+.juego .cartas .card__game {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  margin: 0px 20px;
+  perspective: 1000px;
+  cursor: pointer;
 }
-.final .cuadro .ingresar {
+.juego .cartas .card__game .card__front,
+.juego .cartas .card__game .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 1s ease-out;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.juego .cartas .card__game .card__front .num,
+.juego .cartas .card__game .card__back .num {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.juego .cartas .card__game .card__front .num h4,
+.juego .cartas .card__game .card__back .num h4 {
+  font-size: 1.5rem;
+  color: #531bc4;
+}
+.juego .cartas .card__game .card__front .img__quest,
+.juego .cartas .card__game .card__back .img__quest {
+  width: 100%;
+}
+.juego .cartas .card__game .card__front .fondo,
+.juego .cartas .card__game .card__back .fondo {
+  height: 100%;
+  width: 100%;
+}
+.juego .cartas .card__game .card__front .borde,
+.juego .cartas .card__game .card__back .borde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.juego .cartas .card__game .card__front .deco,
+.juego .cartas .card__game .card__back .deco {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  padding: 2px;
+  font-size: 1.5rem;
+  font-family: "gobold";
+}
+.juego .cartas .card__game .card__front .deco__top,
+.juego .cartas .card__game .card__back .deco__top {
+  z-index: 2;
+  top: 10%;
+}
+.juego .cartas .card__game .card__front .deco__bot,
+.juego .cartas .card__game .card__back .deco__bot {
+  bottom: 10%;
+}
+.juego .cartas .card__game .card__front .quest,
+.juego .cartas .card__game .card__back .quest {
   position: absolute;
   text-align: center;
-  width: 100%;
-  margin-bottom: 30px;
   bottom: 0;
+  height: 150px;
 }
-.final .cuadro .ingresar label {
-  display: block;
+.juego .cartas .card__game .card__front .quest h3,
+.juego .cartas .card__game .card__back .quest h3 {
+  color: #531bc4;
+  margin-bottom: 15px;
   font-size: 1.2rem;
-  color: #525252;
-  margin-bottom: 10px;
 }
-.final .cuadro .ingresar .rellenar {
-  display: inline-block;
+.juego .cartas .card__game .card__front .quest p,
+.juego .cartas .card__game .card__back .quest p {
+  font-size: 1.2rem;
+}
+.juego .cartas .card__game .card__back {
+  transform: rotateY(180deg);
+}
+.juego .cartas .card__game:hover .card__front {
+  transform: rotateY(180deg);
+}
+.juego .cartas .card__game:hover .card__back {
+  transform: rotateY(360deg);
+}
+.juego .opciones .opcion {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 30px 10px;
+}
+.juego .opciones .opcion i {
+  display: flex;
   justify-content: center;
-  font-size: 1rem;
-  padding: 5px;
-  margin-bottom: 10px;
+  align-items: center;
+  color: white;
+  background-color: #531bc4;
+  width: 100px;
+  height: 80px;
+  font-size: 4rem;
+  border-radius: 100%;
+  margin-right: 10px;
 }
-.final .cuadro .ingresar .botones button {
-  padding: 15px 70px;
-  font-size: 1.2rem;
+.juego .opciones .opcion button {
   cursor: pointer;
+  font-size: 1rem;
+  height: 50px;
+  width: 500px;
+  padding: 10px;
+  background-color: #ffffff;
   border-radius: 10px;
-  border: 1px solid rgb(121, 121, 121);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.final .cuadro .ingresar .botones__enviar:hover {
-  background-color: green;
-  color: white;
-}
-.final .cuadro .ingresar .botones__cancelar:hover {
-  background-color: red;
-  color: white;
+.juego .opciones .opcion button:hover {
+  border: 3px solid #242424;
 }
 
 .heart {
@@ -320,90 +462,5 @@
     transform: scale(1);
   }
 }
-/* header {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    opacity: 1;
-    transition: opacity 2s;
-    z-index: 2;
-
-    h1 {
-        color: white;
-        font-size: 4rem;
-    }
-
-    button {
-        margin-top: 20px;
-        padding: 10px 40px;
-        font-size: 1.3rem;
-        background-color: transparent;
-        color: white;
-        border: 1px solid white;
-    }
-}
-
-main {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100vh;
-    position: relative;
-
-    img {
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        transition: opacity 2s;
-    }
-
-    .oculto {
-        opacity: 0;
-    }
-
-    .barra {
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-
-        &__texto {
-            p {
-                background-color: #0f0f0f;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                padding: 0px 10px;
-                opacity: 1;
-            }
-        }
-
-        &__panel {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 15% 35% 35% 15%;
-
-            button {
-                font-size: 1rem;
-                border: 1px solid white;
-                color: white;
-                background-color: #181818;
-            }
-
-            .lados {
-                grid-row: span 2;
-            }
-        }
-    }
-} */
 
 /*# sourceMappingURL=style.css.map */

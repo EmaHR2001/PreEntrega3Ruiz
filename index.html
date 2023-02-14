@@ -13,78 +13,163 @@
 </head>
 
 <body>
-    <header id="inicio" class="comienzo">
-        <div class="tabla">
-            <h2>Top 10 Ranking</h2>
-            <div class="linea">
-                <p>Nombre</p><p>Categoria</p><p>Puntos</p><p>Tiempo</p>
-            </div>
-            <div class="linea linea__jugador"></div>
-            <div class="linea linea__jugador"></div>
-            <div class="linea linea__jugador"></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <div class="linea linea__jugador"><p></p></div>
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <h1 class="prueba heart">TrivialiS</h1>
-        <h2 class="ff-graphica">Elige la categoria</h2>
-        <div class="categorySelect">
-            <button class="category ff-graphica b-blue"><i class="fa-solid fa-landmark heartbeat"></i>Historia</button>
-            <button class="category ff-graphica b-red"><i class="fa-solid fa-gamepad heartbeat"></i>Juegos</button>
-            <button class="category b-black"><img class="logo-black" src="image/avengers-black.png"><img class="heartbeat logo-color" src="image/avengers.png"></button>
-            <button class="category ff-graphica b-yellow"><i class="fa-solid fa-comment heartbeat"></i>Cultura</button>
-            <button class="category ff-graphica b-green"><i class="fa-solid fa-earth-americas heartbeat"></i>Mundo</button>
-            <button class="category ff-graphica b-violet"><i class="fa-solid fa-clapperboard heartbeat"></i>Cine</button>
+    <header id="inicio">
+        <h1>Trivialis</h1>
+        <div>
+            <button class="boton boton__jugar">Jugar</button>
+            <button class="boton boton__ranking">Ranking</button>
         </div>
     </header>
 
-    <main id="juego" class="trivia">
-        <section class="top">
-            <div id="reloj" class="reloj">
-                <p id="tiempo" class="ff-graphica">60</p>
-            </div>
-            <div class="cuadro">
-                <div class="cuadro__imagen">
-                    <img id="imagen" src=>
+    <main>
+        <section id="selectModo" class="modos">
+            <button class="boton boton__volver">Atras</button>
+            <h2 class="ff-category">Selecciona el modo de juego</h2>
+            <div class="card__content">
+                <div class="card__modo">
+                    <div class="card__front">
+                        <p class="deco deco__top">Normal</p>
+                        <img class="fondo" src="./image/fondo__modo1.jpg">
+                        <img class="borde" src="./image/carta__espalda__beta.png.png">
+                        <p class="deco deco__bot">Trivialis</p>
+                    </div>
+                    <div class="card__back">
+                        <p class="deco deco__top">Normal</p>
+                        <p class="info ff-category">Elige una categoría y supera las 15 preguntas antes de que el tiempo
+                            se acabe.</p>
+                    </div>
                 </div>
-                <h3 id="pregunta" class=""></h3>
+                <div class="card__modo">
+                    <div class="card__front">
+                        <p class="deco deco__top">Contratiempo</p>
+                        <img class="fondo" src="./image/fondo__modo2.jpg">
+                        <img class="borde" src="./image/carta__espalda__beta.png.png">
+                        <p class="deco deco__bot">Trivialis</p>
+                    </div>
+                    <div class="card__back">
+                        <p class="deco deco__top">Contratiempo</p>
+                        <p class="info ff-category">Elige 7 categorías y supera 100 preguntas aleatorias antes de que el
+                            tiempo se acabe.</p>
+                    </div>
+                </div>
+                <div class="card__modo">
+                    <div class="card__front">
+                        <p class="deco deco__top">Supervivencia</p>
+                        <img class="fondo" src="./image/fondo__modo3.jpg">
+                        <img class="borde" src="./image/carta__espalda__beta.png.png">
+                        <p class="deco deco__bot">Trivialis</p>
+                    </div>
+                    <div class="card__back">
+                        <p class="deco deco__top">Supervivencia</p>
+                        <p class="info ff-category">Elige 7 categorías y supera 100 preguntas aleatorias antes de que el
+                            tiempo se acabe sin perder tus 3 vidas.</p>
+                    </div>
+                </div>
             </div>
+            <button id="buttonModo" class="boton boton__desactivado">Elige</button>
         </section>
 
-        <section class="opciones">
-            <div class="opciones__content">
-                <button class="opcion"></button>
-                <button class="opcion"></button>
-                <button class="opcion"></button>
-                <button class="opcion"></button>
+        <section id="selectCat" class="categorias">
+            <button class="boton boton__volver">Atras</button>
+            <h2 class="ff-category">Selecciona las categorías</h2>
+            <div class="mover mover__left"></div>
+            <div id="carrousel" class="cat__content">
+                <div class="card__category">
+                    <p class="deco deco__top">Animales</p>
+                    <img class="fondo" src="./image/categoria__animales.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+                <div class="card__category">
+                    <p class="deco deco__top">Avengers</p>
+                    <img class="fondo" src="./image/categoria__avengers.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+                <div class="card__category">
+                    <p class="deco deco__top">Cine</p>
+                    <img class="fondo" src="./image/categoria__cine.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+                <div class="card__category">
+                    <p class="deco deco__top">Historia</p>
+                    <img class="fondo" src="./image/categoria__historia.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+                <div class="card__category">
+                    <p class="deco deco__top">Juegos</p>
+                    <img class="fondo" src="./image/categoria__juegos.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+                <div class="card__category">
+                    <p class="deco deco__top">Mitología</p>
+                    <img class="fondo" src="./image/categoria__mitologia.jpg">
+                    <img class="borde" src="./image/carta__espalda__beta.png.png">
+                    <p class="deco deco__bot">Trivialis</p>
+                </div>
+            </div>
+            <div class="mover mover__right"></div>
+            <button class="boton boton__jugar">Comenzar</button>
+        </section>
+
+        <section id="game" class="juego">
+            <div class="top">
+                <div class="tiempo">
+                    <img src="/image/icons8-sand-timer-100.png">
+                    <p class="ff-quest">180</p>
+                </div>
+                <h2 class="ff-category">Supervivencia</h2>
+                <div class="vida">
+                    <img class="heart" src="/image/icons8-heart-65.png">
+                    <img src="/image/icons8-heart-65.png">
+                    <img src="/image/icons8-heart-65.png">
+                </div>
+            </div>
+            <div class="cartas">
+                <div class="card__game">
+                    <div class="card__front">
+                        <div class="num">
+                            <h4 class="ff-category">15</h4>
+                        </div>
+                        <img class="img__quest" src="./image/american2.jpg">
+                        <img class="borde" src="./image/cartaprueba2.png">
+                        <div class="quest">
+                            <h3 class="ff-category">Cine</h3>
+                            <p class="ff-category">Que personaje interpreto?</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <p class="deco deco__top">Supervivencia</p>
+                        <img class="fondo" src="./image/fondo__modo3.jpg">
+                        <img class="borde" src="./image/carta__espalda__beta.png.png">
+                        <p class="deco deco__bot">Trivialis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opciones">
+                <div class="opcion">
+                    <i class="fa-solid fa-dice-one"></i>
+                    <button class="ff-category">Pacolepsias</button>
+                </div>
+                <div class="opcion">
+                    <i class="fa-solid fa-dice-two"></i>
+                    <button class="ff-category">Pacolepsias</button>
+                </div>
+                <div class="opcion">
+                    <i class="fa-solid fa-dice-three"></i>
+                    <button class="ff-category">Pacolepsias</button>
+                </div>
+                <div class="opcion">
+                    <i class="fa-solid fa-dice-four"></i>
+                    <button class="ff-category">Pacolepsias</button>
+                </div>
             </div>
         </section>
     </main>
-
-    <footer id="puntuacion" class="final">
-        <div class="cuadro">
-            <h3 class="ff-graphica">Puntaje</h3>
-            <p class="ff-graphica">Categoria:<span class="dato ff-graphica">Avengers</span></p>
-            <p class="ff-graphica">Cantidad de aciertos</p>
-            <p class="dificultad dificultad__f ff-graphica">Faciles<span class="dato ff-graphica">3</span></p>
-            <p class="dificultad dificultad__m ff-graphica">Medias<span class="dato ff-graphica">3</span></p>
-            <p class="dificultad dificultad__d ff-graphica">Dificiles<span class="dato ff-graphica">3</span></p>
-            <p class="ff-graphica">Tiempo:<span class="dato">3:00</span></p>
-            <div class="ingresar">
-                <label class="ff-graphica" for="name">Ingresa tu nombre para guardar tu record en el ranking</label>
-                <input class="rellenar ff-graphica" type="text" name="nombre" id="name">
-                <div class="botones">
-                    <button class="botones__enviar enviar ff-graphica">Enviar</button>
-                    <button class="botones__cancelar enviar ff-graphica">Cancelar</button>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
 </body>
 

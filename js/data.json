@@ -1,0 +1,576 @@
+{
+    "categorias": {
+        "categoría0": [
+            "historia",
+            "asdasd"
+        ],
+        "categoría1": [
+            "historia",
+            "asdasd"
+        ],
+        "categoría2": [
+            "historia",
+            "asdasd"
+        ],
+        "categoría3": [
+            "historia",
+            "asdasd"
+        ],
+        "categoría4": [
+            "historia",
+            "asdasd"
+        ],
+        "categoría5": [
+            "historia",
+            "asdasd"
+        ]
+    },
+    "Historia": [
+        {
+            "imagen": "image/bandera.jpg",
+            "pregunta": "¿Quien fue el primer presidente de Estados Unidos?",
+            "respuesta": 0,
+            "opcion0": "George Washington",
+            "opcion1": "John F. Kennedy",
+            "opcion2": "Donald Trump",
+            "opcion3": "George H. Bush"
+        },
+        {
+            "imagen": "image/atentado.jpg",
+            "pregunta": "En que año se produjo el atentado de las torres gemelas?",
+            "respuesta": 2,
+            "opcion0": "2011",
+            "opcion1": "1999",
+            "opcion2": "2001",
+            "opcion3": "2010"
+        },
+        {
+            "imagen": "image/arco.jpg",
+            "pregunta": "¿De qué nacionalidad era Juana de Arco?",
+            "respuesta": 2,
+            "opcion0": "Italiana",
+            "opcion1": "Inglesa",
+            "opcion2": "Francesa",
+            "opcion3": "Sueca"
+        },
+        {
+            "imagen": "image/isla.jpg",
+            "pregunta": "¿Qué isla generó un conflicto entre Reino Unido y Argentina?",
+            "respuesta": 0,
+            "opcion0": "Las Malvinas",
+            "opcion1": "Las Maldivas",
+            "opcion2": "Hawaii",
+            "opcion3": "Tahití"
+        },
+        {
+            "imagen": "image/volcan.jpg",
+            "pregunta": "¿Qué volcán devastó Pompeya?",
+            "respuesta": 2,
+            "opcion0": "El Etna",
+            "opcion1": "El Santa Helena",
+            "opcion2": "El Vesubio",
+            "opcion3": "El Kilimanjaro"
+        },
+        {
+            "imagen": "image/cavernicola.jpg",
+            "pregunta": "¿Dónde se han encontrado principalmente pinturas del período Paleolítico?",
+            "respuesta": 1,
+            "opcion0": "Vasijas",
+            "opcion1": "Cuevas",
+            "opcion2": "Cascadas",
+            "opcion3": "Pieles"
+        },
+        {
+            "imagen": "image/caligula.jpg",
+            "pregunta": "¿A quién nombro senador Calígula?",
+            "respuesta": 3,
+            "opcion0": "Su hijo",
+            "opcion1": "Su lacayo",
+            "opcion2": "Su perro",
+            "opcion3": "Su caballo"
+        },
+        {
+            "imagen": "image/luna.jpg",
+            "pregunta": "¿Quién fue el primer hombre que pisó la luna?",
+            "respuesta": 2,
+            "opcion0": "Michael Collins",
+            "opcion1": "Edwin Aldrin",
+            "opcion2": "Neil Amstrong",
+            "opcion3": "Donald Trump"
+        },
+        {
+            "imagen": "image/italia.jpg",
+            "pregunta": "¿Que dictador italiano que lideraba Italia al comienzo de la Segunda Guerra Mundial?",
+            "respuesta": 1,
+            "opcion0": "Videla",
+            "opcion1": "Benito Mussolini",
+            "opcion2": "Victor Manuel II",
+            "opcion3": "Humberto I"
+        },
+        {
+            "imagen": "image/dallas.jpg",
+            "pregunta": "¿Qué presidente estadounidense fue asesinado en Dallas?",
+            "respuesta": 0,
+            "opcion0": "John F. Kennedy",
+            "opcion1": "Abraham Lincoln",
+            "opcion2": "George Washington",
+            "opcion3": "Donald Trump"
+        },
+        {
+            "imagen": "image/industrial.jpg",
+            "pregunta": "¿Que evento marco el inicio de la revolución industrial?",
+            "respuesta": 2,
+            "opcion0": "El telégrafo",
+            "opcion1": "El tren a vapor",
+            "opcion2": "La hiladora a vapor",
+            "opcion3": "El automóvil"
+        },
+        {
+            "imagen": "image/aztecas.jpg",
+            "pregunta": "¿Qué ciudad fundaron los aztecas??",
+            "respuesta": 1,
+            "opcion0": "Tulúm",
+            "opcion1": "Tenochtitlán",
+            "opcion2": "Chichén Itzá",
+            "opcion3": "Quetzalcoatl"
+        },
+        {
+            "imagen": "image/imprenta.jpg",
+            "pregunta": "¿Quién inventó la imprenta?",
+            "respuesta": 0,
+            "opcion0": "Johannes Gutenberg",
+            "opcion1": "Los asiáticos",
+            "opcion2": "Friedrich Koenig",
+            "opcion3": "Los griegos"
+        },
+        {
+            "imagen": "image/francia.jpg",
+            "pregunta": "En que año se produjo la revolución francesa?",
+            "respuesta": 0,
+            "opcion0": "1789",
+            "opcion1": "1890",
+            "opcion2": "1770",
+            "opcion3": "1765"
+        },
+        {
+            "imagen": "image/eclesiastica.jpg",
+            "pregunta": "¿Qué institución eclesiástica mandó a la hoguera a brujas,impuros y herejes?",
+            "respuesta": 1,
+            "opcion0": "La orden del temple",
+            "opcion1": "La Santa Inquisición",
+            "opcion2": "El tribunal de la Rota",
+            "opcion3": "Los Legionarios"
+        }
+    ],
+    "Juegos": [
+        {
+            "imagen": "image/zelda.jpg",
+            "pregunta": "¿Quien es el protagonista del juego Legends of Zelda}?",
+            "respuesta": 1,
+            "opcion0": "Ronny",
+            "opcion1": "Link",
+            "opcion2": "Zelda",
+            "opcion3": "Mario"
+        },
+        {
+            "imagen": "image/portal.jpg",
+            "pregunta": "¿Cuales son los colores de los portales del juego Portal?",
+            "respuesta": 2,
+            "opcion0": "Rojo y Azul",
+            "opcion1": "Naranja y Verde",
+            "opcion2": "Naranja y Azul",
+            "opcion3": "Verde y Azul"
+        },
+        {
+            "imagen": "image/mario.jpg",
+            "pregunta": "¿Que nombre tiene el juego de carreras de Mario?",
+            "respuesta": 3,
+            "opcion0": "Go! Mario",
+            "opcion1": "Run Mario",
+            "opcion2": "Mario Cards",
+            "opcion3": "Mario Karts"
+        },
+        {
+            "imagen": "image/minecraft.jpg",
+            "pregunta": "¿Cuál es el nombre del co-protagonista del juego Minecraft?",
+            "respuesta": 2,
+            "opcion0": "Steve",
+            "opcion1": "Milei",
+            "opcion2": "Alex",
+            "opcion3": "Hannah"
+        },
+        {
+            "imagen": "image/the-last-of-us.jpg",
+            "pregunta": "¿Cuál es el nombre del protagonista de The Last of Us?",
+            "respuesta": 0,
+            "opcion0": "Joel",
+            "opcion1": "Martin",
+            "opcion2": "Billy",
+            "opcion3": "Connor"
+        },
+        {
+            "imagen": "image/smash.jpg",
+            "pregunta": "¿Cuál es el juego de la imagen?",
+            "respuesta": 3,
+            "opcion0": "Mortal Kombat",
+            "opcion1": "Street Fighter",
+            "opcion2": "Tekken",
+            "opcion3": "Super Smash Bros"
+        },
+        {
+            "imagen": "image/toxic.jpg",
+            "pregunta": "¿Por que es tan toxico League of Legends?",
+            "respuesta": 3,
+            "opcion0": "Por la comunidad",
+            "opcion1": "Por el mal balance",
+            "opcion2": "Por Riot",
+            "opcion3": "Todas las anteriores"
+        },
+        {
+            "imagen": "image/minecraft.jpg",
+            "pregunta": "¿Cuantos puntos de vida tienen los personaje de Minecraft?",
+            "respuesta": 1,
+            "opcion0": "10",
+            "opcion1": "20",
+            "opcion2": "25",
+            "opcion3": "15"
+        },
+        {
+            "imagen": "image/pokemon.jpg",
+            "pregunta": "¿Cuál es este Pokémon?",
+            "respuesta": 1,
+            "opcion0": "Vaporeon",
+            "opcion1": "Bulbasaur",
+            "opcion2": "Charmander",
+            "opcion3": "Pikachu"
+        },
+        {
+            "imagen": "image/map.jpg",
+            "pregunta": "¿Cual es el juego con el mapa mas grande existente?",
+            "respuesta": 2,
+            "opcion0": "The Witcher 3",
+            "opcion1": "GTA V",
+            "opcion2": "No Man's Sky",
+            "opcion3": "Minecraft"
+        },
+        {
+            "imagen": "image/rockstar.jpg",
+            "pregunta": "¿Cual de estos videojuegos a desarrollado Rockstar?",
+            "respuesta": 1,
+            "opcion0": "The Witcher",
+            "opcion1": "Max Payne 3",
+            "opcion2": "Day Light",
+            "opcion3": "Far Cry"
+        },
+        {
+            "imagen": "image/xbox.jpg",
+            "pregunta": "¿Qué significa la luz roja en la consola Xbox 360?",
+            "respuesta": 2,
+            "opcion0": "Mandar a mantenimiento",
+            "opcion1": "Fallo al reproducir",
+            "opcion2": "Falta de ventilacion",
+            "opcion3": "Bateria agotada"
+        },
+        {
+            "imagen": "image/grindear.jpg",
+            "pregunta": "¿Qué significa grindear?",
+            "respuesta": 0,
+            "opcion0": "Matar muchos enemigos",
+            "opcion1": "Ir a por material",
+            "opcion2": "Molestar a otros",
+            "opcion3": "Perder apropósito"
+        },
+        {
+            "imagen": "image/mariobros.jpg",
+            "pregunta": "¿En que año salio el primer juego protagonizado por Mario?",
+            "respuesta": 2,
+            "opcion0": "1978",
+            "opcion1": "1890",
+            "opcion2": "1983",
+            "opcion3": "1999"
+        },
+        {
+            "imagen": "image/hollow-knight.jpg",
+            "pregunta": "¿Como se llama el pueblo inicial de Hollow Knight?",
+            "respuesta": 1,
+            "opcion0": "Hollownest",
+            "opcion1": "Bocasucia",
+            "opcion2": "Insectopia",
+            "opcion3": "Ant Village"
+        }
+    ],
+    "Avengers": [
+        {
+            "imagen": "image/avengers.jpg",
+            "pregunta": "¿Quien fundo los Vengadores?",
+            "respuesta": 2,
+            "opcion0": "Tony Stark",
+            "opcion1": "Capitan America",
+            "opcion2": "Nick Fury",
+            "opcion3": "Colson"
+        },
+        {
+            "imagen": "image/hulk.jpg",
+            "pregunta": "¿Cual de estos personajes no es un vengador?",
+            "respuesta": 2,
+            "opcion0": "Hulk",
+            "opcion1": "Bruja Escarlata",
+            "opcion2": "Quicksilver",
+            "opcion3": "Viuda Negra"
+        },
+        {
+            "imagen": "image/thanos.jpg",
+            "pregunta": "¿Cuantos personajes han usando un guante con todas las gemas?",
+            "respuesta": 2,
+            "opcion0": "2",
+            "opcion1": "1",
+            "opcion2": "3",
+            "opcion3": "4"
+        },
+        {
+            "imagen": "image/natasha.jpg",
+            "pregunta": "¿Cuál es la nacionalidad de Natasha Romanoff?",
+            "respuesta": 0,
+            "opcion0": "Rusa",
+            "opcion1": "Suiza",
+            "opcion2": "Estadounidense",
+            "opcion3": "Alemana"
+        },
+        {
+            "imagen": "image/referencia.jpg",
+            "pregunta": "¿Quien dice la famosa frase: Entendí la referencia?",
+            "respuesta": 2,
+            "opcion0": "Tony Stark",
+            "opcion1": "Deadpool",
+            "opcion2": "Capitan America",
+            "opcion3": "Thor"
+        },
+        {
+            "imagen": "image/martillo.jpg",
+            "pregunta": "¿Como se llama el martillo de Thor?",
+            "respuesta": 3,
+            "opcion0": "Mjolnir",
+            "opcion1": "Stormbreaker",
+            "opcion2": "Jonathan",
+            "opcion3": "Miornir"
+        },
+        {
+            "imagen": "image/fury.jpg",
+            "pregunta": "¿Como perdió el ojo Nick Fury?",
+            "respuesta": 2,
+            "opcion0": "Por una batalla",
+            "opcion1": "Por una bala",
+            "opcion2": "Por un gato",
+            "opcion3": "Por una cabra"
+        },
+        {
+            "imagen": "image/strange.jpg",
+            "pregunta": "¿Cuantos futuros vio Dr.Strange para vencer a Thanos?",
+            "respuesta": 3,
+            "opcion0": "14,000,000",
+            "opcion1": "14,605,000",
+            "opcion2": "14,056,000",
+            "opcion3": "14,000,605"
+        },
+        {
+            "imagen": "image/triste.jpg",
+            "pregunta": "¿Quien asesino a los padres de Iron Man?",
+            "respuesta": 1,
+            "opcion0": "Un ladron en un callejón",
+            "opcion1": "El Soldado del Invierno",
+            "opcion2": "El Mandarin",
+            "opcion3": "El amigo de su padre"
+        },
+        {
+            "imagen": "image/janefoster.jpg",
+            "pregunta": "¿En que tenia doctorado Jane Foster?",
+            "respuesta": 0,
+            "opcion0": "Astrofisica y astronomia",
+            "opcion1": "Bellas artes",
+            "opcion2": "Fisica y matematicas",
+            "opcion3": "Medicina"
+        },
+        {
+            "imagen": "image/armaduras.jpg",
+            "pregunta": "¿Cuantas armaduras fabrico Tony Stark?",
+            "respuesta": 2,
+            "opcion0": "12",
+            "opcion1": "35",
+            "opcion2": "42",
+            "opcion3": "54"
+        },
+        {
+            "imagen": "image/wandavision.jpg",
+            "pregunta": "¿En que comic se inspira la seria Wandavision?",
+            "respuesta": 2,
+            "opcion0": "The House",
+            "opcion1": "Wandapolis",
+            "opcion2": "The Vision",
+            "opcion3": "The WandaTV"
+        },
+        {
+            "imagen": "image/stanlee.jpg",
+            "pregunta": "¿Cuantos cameos a tenido Stan Lee?",
+            "respuesta": 3,
+            "opcion0": "75",
+            "opcion1": "72",
+            "opcion2": "86",
+            "opcion3": "96"
+        },
+        {
+            "imagen": "image/shangchi.jpg",
+            "pregunta": "¿Como se llama el pueblo oculto que aparece en Shang-Chi y los 10 anillos?",
+            "respuesta": 2,
+            "opcion0": "Ta Olei",
+            "opcion1": "Tao Lei",
+            "opcion2": "Ta Lo",
+            "opcion3": "Ta Oming"
+        },
+        {
+            "imagen": "image/scott.jpg",
+            "pregunta": "¿Cuantos años estuvo en la cárcel Scott?",
+            "respuesta": 1,
+            "opcion0": "4 años",
+            "opcion1": "3 años",
+            "opcion2": "5 años",
+            "opcion3": "6 años"
+        }
+    ],
+    "Cine": [
+        {
+            "imagen": "image/harry-potter.jpg",
+            "pregunta": "¿Cuantas películas tuvo Harry Potter?",
+            "respuesta": 2,
+            "opcion0": "6",
+            "opcion1": "7",
+            "opcion2": "8",
+            "opcion3": "9"
+        },
+        {
+            "imagen": "image/matrix.jpg",
+            "pregunta": "¿Quien fue el actor que protagonizo la famosa película Matrix?",
+            "respuesta": 1,
+            "opcion0": "Laurence Fishburne",
+            "opcion1": "Keanu Reeves",
+            "opcion2": "Christian Bale",
+            "opcion3": "Carrie-Anne Moss"
+        },
+        {
+            "imagen": "image/cine.jpg",
+            "pregunta": "¿Cual es la película mas taquillera de todos los tiempos?",
+            "respuesta": 3,
+            "opcion0": "Titanic",
+            "opcion1": "Avengers: Endgame",
+            "opcion2": "Star Wars: El despertar de la fuerza",
+            "opcion3": "Avatar"
+        },
+        {
+            "imagen": "image/sexto-sentido.jpg",
+            "pregunta": "¿A que pelicula pertenece la famosa frase: Veo gente muerta?",
+            "respuesta": 1,
+            "opcion0": "Amitiville",
+            "opcion1": "El Sexto Sentido",
+            "opcion2": "El Resplandor",
+            "opcion3": "Poltergeist"
+        },
+        {
+            "imagen": "image/american.jpg",
+            "pregunta": "¿Que personaje interpreto Christian Bale en American Psycho?",
+            "respuesta": 0,
+            "opcion0": "Patrick Bateman",
+            "opcion1": "Paul Allen",
+            "opcion2": "Detective Donald Kimball",
+            "opcion3": "Timothy Bryce"
+        },
+        {
+            "imagen": "image/titanic.jpg",
+            "pregunta": "¿Cuanta es la duración de la película Titanic?",
+            "respuesta": 1,
+            "opcion0": "180 minutos",
+            "opcion1": "194 minutos",
+            "opcion2": "72 minutos",
+            "opcion3": "120 minutos"
+        },
+        {
+            "imagen": "image/pilgrim.jpg",
+            "pregunta": "¿A cuantos exes tuvo que derrotar Scott Pilgrim en Scott Pilgrim vs. the World?",
+            "respuesta": 1,
+            "opcion0": "6",
+            "opcion1": "7",
+            "opcion2": "9",
+            "opcion3": "5"
+        },
+        {
+            "imagen": "image/oscars.jpg",
+            "pregunta": "¿Que película gano el Oscar a mejor película en 2020?",
+            "respuesta": 3,
+            "opcion0": "Érase una vez en Hollywood",
+            "opcion1": "Joker",
+            "opcion2": "1917",
+            "opcion3": "Parásitos"
+        },
+        {
+            "imagen": "image/fragmentado.jpg",
+            "pregunta": "¿Cuantas personalidades tenia el protagonista de Fragmentado?",
+            "respuesta": 1,
+            "opcion0": "155",
+            "opcion1": "24",
+            "opcion2": "10",
+            "opcion3": "32"
+        },
+        {
+            "imagen": "image/oscars.jpg",
+            "pregunta": "¿Cuantas películas argentinas han ganado el Oscar?",
+            "respuesta": 0,
+            "opcion0": "2",
+            "opcion1": "4",
+            "opcion2": "3",
+            "opcion3": "5"
+        },
+        {
+            "imagen": "image/que-pelicula.jpg",
+            "pregunta": "¿A que película pertenece esta imagen?",
+            "respuesta": 1,
+            "opcion0": "Hasta el ultimo hombre",
+            "opcion1": "El Gran Pez",
+            "opcion2": "La milla verde",
+            "opcion3": "El Show de Truman"
+        },
+        {
+            "imagen": "image/odiseaespacio.jpg",
+            "pregunta": "¿Quien dirigió 2001: Una Odisea del Espacio?",
+            "respuesta": 2,
+            "opcion0": "George Lucas",
+            "opcion1": "James Cameron",
+            "opcion2": "Stanley Kubrick",
+            "opcion3": "Ridley Scott"
+        },
+        {
+            "imagen": "image/mouse.jpg",
+            "pregunta": "¿En que año fue la primer aparición del iconico personaje Mickey Mouse?",
+            "respuesta": 2,
+            "opcion0": "1918",
+            "opcion1": "1965",
+            "opcion2": "1928",
+            "opcion3": "1947"
+        },
+        {
+            "imagen": "image/cine.jpg",
+            "pregunta": "¿A quien se le a considerado el padre del cine?",
+            "respuesta": 1,
+            "opcion0": "Auguste y Louis Lumière",
+            "opcion1": "George Méliès",
+            "opcion2": "David Wark Griffith",
+            "opcion3": "Louis Le Prince"
+        },
+        {
+            "imagen": "image/oscars.jpg",
+            "pregunta": "¿Cual a sido el actor que a ganado mas Oscar?",
+            "respuesta": 2,
+            "opcion0": "Jack Nicholson",
+            "opcion1": "Daniel Day-Lewis",
+            "opcion2": "Katherine Hepburn",
+            "opcion3": "Meryl Streep"
+        }
+    ]
+}
