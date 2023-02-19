@@ -38,74 +38,63 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   background-image: url(../image/fondo2.jpg);
-  background-size: cover;
+  overflow: hidden;
 }
 
 .boton {
-  margin-top: 20px;
-  padding: 20px 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px solid white;
-  font-family: "category";
-}
-.boton:hover {
-  color: white;
-  transform: scale(1.1);
-}
-.boton__desactivado {
   cursor: default;
   border: 2px solid #6d6d6d;
   color: #6d6d6d;
   background-color: #868686;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: "category";
 }
-.boton__desactivado:hover {
-  color: #6d6d6d;
-  transform: none;
+.boton__active {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  color: #242424;
+  background-color: #ffffff;
 }
-.boton__jugar {
-  margin-right: 10px;
+.boton__active:hover {
+  color: white;
+  transform: scale(1.1);
 }
-.boton__jugar:hover {
-  background-color: #ca0000;
-}
-.boton__jugar {
-  margin-right: 10px;
-}
-.boton__jugar:hover {
-  background-color: #ca0000;
-}
-.boton__ranking:hover {
-  margin-left: 10px;
-  background-color: #0024c7;
+.boton__inicio {
+  padding: 20px 60px;
+  margin: 20px;
 }
 .boton__volver {
-  margin-left: 30px;
-  top: 0;
-  left: 0;
-  font-size: 1rem;
   position: absolute;
-  padding: 10px 50px;
+  left: 0;
+  padding: 5px 40px;
+  margin-left: 20px;
 }
-.boton__volver:hover {
-  background-color: #0024c7;
+.boton__blue:hover {
+  background-color: #3330ff;
+}
+.boton__red:hover {
+  background-color: #ff3030;
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
 }
 header h1 {
-  margin-bottom: 100px;
+  align-self: end;
   font-family: "blocky";
-  font-size: 10rem;
   color: white;
+  font-size: 12rem;
 }
 
 main {
@@ -115,23 +104,24 @@ main {
 
 .modos {
   display: none;
-  flex-direction: column;
   width: 100%;
   height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.modos .top {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  overflow: hidden;
 }
-.modos h2 {
+.modos .top h2 {
   color: white;
-  margin-bottom: 20px;
 }
 .modos .card__content {
   display: flex;
   justify-content: center;
 }
-.modos .card__modo {
+.modos .card__content .card__modo {
   position: relative;
   width: 240px;
   height: 420px;
@@ -140,8 +130,8 @@ main {
   filter: grayscale(1);
   cursor: pointer;
 }
-.modos .card__modo .card__front,
-.modos .card__modo .card__back {
+.modos .card__content .card__modo .card__front,
+.modos .card__content .card__modo .card__back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -153,21 +143,21 @@ main {
   border-radius: 10px;
   overflow: hidden;
 }
-.modos .card__modo .card__front .fondo,
-.modos .card__modo .card__back .fondo {
+.modos .card__content .card__modo .card__front .fondo,
+.modos .card__content .card__modo .card__back .fondo {
   height: 100%;
   width: 100%;
 }
-.modos .card__modo .card__front .borde,
-.modos .card__modo .card__back .borde {
+.modos .card__content .card__modo .card__front .borde,
+.modos .card__content .card__modo .card__back .borde {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.modos .card__modo .card__front .deco,
-.modos .card__modo .card__back .deco {
+.modos .card__content .card__modo .card__front .deco,
+.modos .card__content .card__modo .card__back .deco {
   position: absolute;
   color: white;
   border: 1px solid white;
@@ -175,47 +165,53 @@ main {
   font-size: 1.5rem;
   font-family: "gobold";
 }
-.modos .card__modo .card__front .deco__top,
-.modos .card__modo .card__back .deco__top {
+.modos .card__content .card__modo .card__front .deco__top,
+.modos .card__content .card__modo .card__back .deco__top {
   z-index: 2;
   top: 10%;
 }
-.modos .card__modo .card__front .deco__bot,
-.modos .card__modo .card__back .deco__bot {
+.modos .card__content .card__modo .card__front .deco__bot,
+.modos .card__content .card__modo .card__back .deco__bot {
   bottom: 10%;
 }
-.modos .card__modo .card__front .info,
-.modos .card__modo .card__back .info {
+.modos .card__content .card__modo .card__front .info,
+.modos .card__content .card__modo .card__back .info {
   color: white;
   margin: 10px;
   transform: translate(0%, 40%);
 }
-.modos .card__modo .card__back {
+.modos .card__content .card__modo .card__back {
   transform: rotateY(180deg);
 }
-.modos .card__modo:hover .card__front {
+.modos .card__content .card__modo:hover .card__front {
   transform: rotateY(180deg);
 }
-.modos .card__modo:hover .card__back {
+.modos .card__content .card__modo:hover .card__back {
   transform: rotateY(360deg);
 }
-.modos .card__modo:hover {
+.modos .card__content .card__modo:hover {
   filter: none;
+}
+.modos .boton__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .categorias {
   display: none;
-  flex-direction: column;
   width: 100%;
   height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 70% 15%;
+}
+.categorias .top {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  overflow: hidden;
 }
-.categorias h2 {
+.categorias .top h2 {
   color: white;
-  margin-bottom: 20px;
 }
 .categorias .mover {
   width: 70px;
@@ -230,12 +226,31 @@ main {
 .categorias .mover__left {
   left: 0;
 }
-.categorias .cat__content {
-  display: flex;
-  margin-left: 300px;
-  transition: transform 0.5s;
+.categorias .carousel-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.categorias .cat__content .card__category {
+.categorias .carousel-nav {
+  z-index: 5;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.categorias .carousel-nav-left {
+  left: 0;
+}
+.categorias .carousel-nav-right {
+  right: 0;
+}
+.categorias .carousel {
+  white-space: nowrap;
+  font-size: 0;
+}
+.categorias .card__category {
   position: relative;
   width: 240px;
   height: 420px;
@@ -243,44 +258,51 @@ main {
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   filter: grayscale(1);
 }
-.categorias .cat__content .card__category .fondo {
+.categorias .card__category .fondo {
   height: 100%;
   width: 100%;
 }
-.categorias .cat__content .card__category .borde {
+.categorias .card__category .borde {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.categorias .cat__content .card__category .deco {
+.categorias .card__category .deco {
   position: absolute;
   color: white;
   border: 1px solid white;
   padding: 2px;
   font-size: 1.5rem;
   font-family: "gobold";
+  left: 50%;
+  transform: translateX(-50%);
 }
-.categorias .cat__content .card__category .deco__top {
+.categorias .card__category .deco__top {
   z-index: 2;
   top: 10%;
 }
-.categorias .cat__content .card__category .deco__bot {
+.categorias .card__category .deco__bot {
   bottom: 10%;
 }
-.categorias .cat__content .card__category:hover {
+.categorias .card__category:hover {
   filter: none;
+}
+.categorias .bot {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .juego {
+  height: 100%;
   display: none;
-  grid-template-columns: 50% 50%;
-  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .juego .top {
   height: 80px;
@@ -310,36 +332,23 @@ main {
 }
 .juego .top .vida {
   padding: 10px;
+  opacity: 0;
 }
-.juego .cartas {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 100px;
-}
-.juego .cartas .card__game {
+.juego .card__game {
+  justify-self: center;
   position: relative;
   width: 300px;
   height: 480px;
   margin: 0px 20px;
   perspective: 1000px;
-  cursor: pointer;
-}
-.juego .cartas .card__game .card__front,
-.juego .cartas .card__game .card__back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  transition: transform 1s ease-out;
-  background-color: #242424;
-  display: flex;
   justify-content: center;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
+  cursor: pointer;
 }
-.juego .cartas .card__game .card__front .num,
-.juego .cartas .card__game .card__back .num {
+.juego .card__game .num {
   position: absolute;
   z-index: 2;
   right: 0;
@@ -350,30 +359,26 @@ main {
   justify-content: center;
   align-items: center;
 }
-.juego .cartas .card__game .card__front .num h4,
-.juego .cartas .card__game .card__back .num h4 {
+.juego .card__game .num h4 {
   font-size: 1.5rem;
   color: #531bc4;
 }
-.juego .cartas .card__game .card__front .img__quest,
-.juego .cartas .card__game .card__back .img__quest {
+.juego .card__game .img__quest {
   width: 100%;
+  height: 350px;
 }
-.juego .cartas .card__game .card__front .fondo,
-.juego .cartas .card__game .card__back .fondo {
+.juego .card__game .fondo {
   height: 100%;
   width: 100%;
 }
-.juego .cartas .card__game .card__front .borde,
-.juego .cartas .card__game .card__back .borde {
+.juego .card__game .borde {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.juego .cartas .card__game .card__front .deco,
-.juego .cartas .card__game .card__back .deco {
+.juego .card__game .deco {
   position: absolute;
   color: white;
   border: 1px solid white;
@@ -381,70 +386,104 @@ main {
   font-size: 1.5rem;
   font-family: "gobold";
 }
-.juego .cartas .card__game .card__front .deco__top,
-.juego .cartas .card__game .card__back .deco__top {
+.juego .card__game .deco__top {
   z-index: 2;
   top: 10%;
 }
-.juego .cartas .card__game .card__front .deco__bot,
-.juego .cartas .card__game .card__back .deco__bot {
+.juego .card__game .deco__bot {
   bottom: 10%;
 }
-.juego .cartas .card__game .card__front .quest,
-.juego .cartas .card__game .card__back .quest {
+.juego .card__game .quest {
   position: absolute;
   text-align: center;
   bottom: 0;
   height: 150px;
 }
-.juego .cartas .card__game .card__front .quest h3,
-.juego .cartas .card__game .card__back .quest h3 {
-  color: #531bc4;
-  margin-bottom: 15px;
+.juego .card__game .quest p {
   font-size: 1.2rem;
 }
-.juego .cartas .card__game .card__front .quest p,
-.juego .cartas .card__game .card__back .quest p {
-  font-size: 1.2rem;
+.juego .opciones {
+  justify-self: center;
+  align-self: center;
+  margin-top: 50px;
 }
-.juego .cartas .card__game .card__back {
-  transform: rotateY(180deg);
-}
-.juego .cartas .card__game:hover .card__front {
-  transform: rotateY(180deg);
-}
-.juego .cartas .card__game:hover .card__back {
-  transform: rotateY(360deg);
-}
-.juego .opciones .opcion {
+.juego .opciones__content {
   display: flex;
   align-items: center;
-  width: 500px;
-  margin: 30px 10px;
+  position: relative;
+  margin-bottom: 70px;
 }
-.juego .opciones .opcion i {
+.juego .opciones__content i {
+  position: absolute;
+  left: -85px;
+  color: white;
+  font-size: 4rem;
+  margin-right: 10px;
+  background-color: #531bc4;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.juego .opciones__content button {
+  font-size: 1rem;
+  width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.juego .opciones__content button:hover {
+  background-color: #531bc4;
+  color: white;
+}
+
+.swal2-popup {
+  /* width: 300em;
+  height: 35em; */
+}
+
+.custom-class .swal2-title {
+  color: #531bc4;
+  font-family: "category";
+  height: 50px;
+}
+.custom-class .swal2-popup {
+  width: 1000px;
+}
+
+.puntaje__linea {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #531bc4;
-  width: 100px;
-  height: 80px;
-  font-size: 4rem;
-  border-radius: 100%;
+  margin-bottom: 30px;
+}
+.puntaje__linea__nombre {
+  font-size: 1.5rem;
   margin-right: 10px;
 }
-.juego .opciones .opcion button {
-  cursor: pointer;
-  font-size: 1rem;
-  height: 50px;
-  width: 500px;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 10px;
+.puntaje__linea__dato {
+  color: #531bc4;
+  font-size: 1.5rem;
 }
-.juego .opciones .opcion button:hover {
-  border: 3px solid #242424;
+
+.tabla {
+  height: 80%;
+}
+.tabla .linea {
+  display: grid;
+  grid-template-columns: 20% 20% 40% 10% 10%;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(116, 116, 116, 0.4117647059);
+}
+.tabla .linea p {
+  margin: 10px 0px;
+  font-family: "category";
+}
+.tabla .linea__base p {
+  color: #ff3030;
+}
+.tabla .linea__jugador p {
+  margin: 10px 0px;
 }
 
 .heart {
@@ -462,5 +501,492 @@ main {
     transform: scale(1);
   }
 }
+/* $card: #531bc4;
+
+body {
+    height: 100vh;
+    background-image: url(../image/fondo2.jpg);
+    background-size: cover;
+}
+
+.boton {
+    cursor: default;
+    border: 2px solid #6d6d6d;
+    color: #6d6d6d;
+    background-color: #868686;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'category';
+
+    &__active {
+        cursor: pointer;
+        border: 2px solid #ffffff;
+        color: #242424;
+        background-color: #ffffff;
+        &:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+    }
+
+    &__inicio {
+        padding: 20px 60px;
+        margin: 20px;
+    }
+
+    &__volver {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 40px;
+        margin-left: 20px;
+    }
+
+    &__blue:hover {
+        background-color: #3330ff;
+    }
+
+    &__red:hover {
+        background-color: #ff3030;
+    }
+}
+
+header {
+    display: none;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h1 {
+        bottom: 0;
+        font-family: 'blocky';
+        font-size: 10rem;
+        color: white;
+    }
+
+    .boton__content {
+        text-align: center;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.modos {
+    display: none;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .top {
+        position: relative;
+    }
+
+    h2 {
+        color: white;
+        margin: 20px;
+    }
+
+    .card__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card__modo {
+        position: relative;
+        width: 240px;
+        height: 420px;
+        margin: 0px 20px;
+        perspective: 1000px;
+        filter: grayscale(1);
+        cursor: pointer;
+
+        .card__front,
+        .card__back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: transform 1s ease-out;
+            background-color: #242424;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .fondo {
+                height: 100%;
+                width: 100%;
+            }
+
+            .borde {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .deco {
+                position: absolute;
+                color: white;
+                border: 1px solid white;
+                padding: 2px;
+                font-size: 1.5rem;
+                font-family: 'gobold';
+
+                &__top {
+                    z-index: 2;
+                    top: 10%;
+                }
+
+                &__bot {
+                    bottom: 10%;
+                }
+            }
+
+            .info {
+                color: white;
+                margin: 10px;
+                transform: translate(0%, 40%);
+            }
+        }
+
+        .card__back {
+            transform: rotateY(180deg);
+        }
+
+        &:hover .card__front {
+            transform: rotateY(180deg);
+        }
+
+        &:hover .card__back {
+            transform: rotateY(360deg);
+        }
+
+        &:hover {
+            filter: none;
+        }
+    }
+
+    .boton__content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.categorias {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        text-align: center;
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+
+    .mover {
+        width: 70px;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+
+        &__right {
+            right: 0;
+        }
+
+        &__left {
+            left: 0;
+        }
+    }
+
+
+
+    .cat__content {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s;
+
+        .card__category {
+            position: relative;
+            width: 240px;
+            height: 420px;
+            margin: 0px 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            filter: grayscale(1);
+
+            .fondo {
+                height: 100%;
+                width: 100%;
+            }
+
+            .borde {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .deco {
+                position: absolute;
+                color: white;
+                border: 1px solid white;
+                padding: 2px;
+                font-size: 1.5rem;
+                font-family: 'gobold';
+
+                &__top {
+                    z-index: 2;
+                    top: 10%;
+                }
+
+                &__bot {
+                    bottom: 10%;
+                }
+            }
+
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+
+    .bot {
+        margin-top: 20px;
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+.juego {
+    display: none;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+
+    .top {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: span 2;
+        background-color: #2424245d;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .tiempo {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+            img {
+                width: 80px;
+            }
+
+            p {
+                display: inline;
+                font-size: 4rem;
+                color: white;
+            }
+        }
+
+        .vida {
+            padding: 10px;
+        }
+    }
+
+    .cartas {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 100px;
+
+        .card__game {
+            position: relative;
+            width: 300px;
+            height: 480px;
+            margin: 0px 20px;
+            perspective: 1000px;
+            cursor: pointer;
+
+            .card__front,
+            .card__back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                transition: transform 1s ease-out;
+                background-color: #242424;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                overflow: hidden;
+
+                .num {
+                    position: absolute;
+                    z-index: 2;
+                    right: 0;
+                    top: 0;
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h4 {
+                        font-size: 1.5rem;
+                        color: #531bc4;
+                    }
+                }
+
+                .img__quest {
+                    width: 100%;
+                }
+
+                .fondo {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .borde {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .deco {
+                    position: absolute;
+                    color: white;
+                    border: 1px solid white;
+                    padding: 2px;
+                    font-size: 1.5rem;
+                    font-family: 'gobold';
+
+                    &__top {
+                        z-index: 2;
+                        top: 10%;
+                    }
+
+                    &__bot {
+                        bottom: 10%;
+                    }
+                }
+
+                .quest {
+                    position: absolute;
+                    text-align: center;
+                    bottom: 0;
+                    height: 150px;
+
+                    h3 {
+                        color: #531bc4;
+                        margin-bottom: 15px;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .card__back {
+                transform: rotateY(180deg);
+            }
+
+            &:hover .card__front {
+                transform: rotateY(180deg);
+            }
+
+            &:hover .card__back {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+
+    .opciones {
+        .opcion {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            margin: 30px 10px;
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: #531bc4;
+                width: 100px;
+                height: 80px;
+                font-size: 4rem;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+
+            button {
+                cursor: pointer;
+                font-size: 1rem;
+                height: 50px;
+                width: 500px;
+                padding: 10px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+                &:hover {
+                    border: 3px solid #242424
+                }
+            }
+        }
+    }
+}
+
+.heart {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
 
 /*# sourceMappingURL=style.css.map */

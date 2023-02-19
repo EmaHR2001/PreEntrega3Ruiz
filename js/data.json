@@ -1,28 +1,32 @@
 {
     "categorias": {
-        "categoría0": [
-            "historia",
-            "asdasd"
+        "categoria0": [
+            "Javascript",
+            "./image/categoria__javascript.jpg"
         ],
-        "categoría1": [
-            "historia",
-            "asdasd"
+        "categoria1": [
+            "Avengers",
+            "./image/categoria__avengers.jpg"
         ],
-        "categoría2": [
-            "historia",
-            "asdasd"
+        "categoria2": [
+            "Cine",
+            "./image/categoria__cine.jpg"
         ],
-        "categoría3": [
-            "historia",
-            "asdasd"
+        "categoria3": [
+            "Historia",
+            "./image/categoria__historia.jpg"
         ],
-        "categoría4": [
-            "historia",
-            "asdasd"
+        "categoria4": [
+            "Juegos",
+            "./image/categoria__juegos.jpg"
         ],
-        "categoría5": [
-            "historia",
-            "asdasd"
+        "categoria5": [
+            "Mitologia",
+            "./image/categoria__mitologia.jpg"
+        ],
+        "categoria6": [
+            "Pokemon",
+            "./image/categoria__pokemon.jpg"
         ]
     },
     "Historia": [
@@ -36,15 +40,6 @@
             "opcion3": "George H. Bush"
         },
         {
-            "imagen": "image/atentado.jpg",
-            "pregunta": "En que año se produjo el atentado de las torres gemelas?",
-            "respuesta": 2,
-            "opcion0": "2011",
-            "opcion1": "1999",
-            "opcion2": "2001",
-            "opcion3": "2010"
-        },
-        {
             "imagen": "image/arco.jpg",
             "pregunta": "¿De qué nacionalidad era Juana de Arco?",
             "respuesta": 2,
@@ -52,15 +47,6 @@
             "opcion1": "Inglesa",
             "opcion2": "Francesa",
             "opcion3": "Sueca"
-        },
-        {
-            "imagen": "image/isla.jpg",
-            "pregunta": "¿Qué isla generó un conflicto entre Reino Unido y Argentina?",
-            "respuesta": 0,
-            "opcion0": "Las Malvinas",
-            "opcion1": "Las Maldivas",
-            "opcion2": "Hawaii",
-            "opcion3": "Tahití"
         },
         {
             "imagen": "image/volcan.jpg",
@@ -117,33 +103,6 @@
             "opcion3": "Donald Trump"
         },
         {
-            "imagen": "image/industrial.jpg",
-            "pregunta": "¿Que evento marco el inicio de la revolución industrial?",
-            "respuesta": 2,
-            "opcion0": "El telégrafo",
-            "opcion1": "El tren a vapor",
-            "opcion2": "La hiladora a vapor",
-            "opcion3": "El automóvil"
-        },
-        {
-            "imagen": "image/aztecas.jpg",
-            "pregunta": "¿Qué ciudad fundaron los aztecas??",
-            "respuesta": 1,
-            "opcion0": "Tulúm",
-            "opcion1": "Tenochtitlán",
-            "opcion2": "Chichén Itzá",
-            "opcion3": "Quetzalcoatl"
-        },
-        {
-            "imagen": "image/imprenta.jpg",
-            "pregunta": "¿Quién inventó la imprenta?",
-            "respuesta": 0,
-            "opcion0": "Johannes Gutenberg",
-            "opcion1": "Los asiáticos",
-            "opcion2": "Friedrich Koenig",
-            "opcion3": "Los griegos"
-        },
-        {
             "imagen": "image/francia.jpg",
             "pregunta": "En que año se produjo la revolución francesa?",
             "respuesta": 0,
@@ -187,7 +146,7 @@
             "respuesta": 3,
             "opcion0": "Go! Mario",
             "opcion1": "Run Mario",
-            "opcion2": "Mario Cards",
+            "opcion2": "Mario Cars",
             "opcion3": "Mario Karts"
         },
         {
@@ -209,15 +168,6 @@
             "opcion3": "Connor"
         },
         {
-            "imagen": "image/smash.jpg",
-            "pregunta": "¿Cuál es el juego de la imagen?",
-            "respuesta": 3,
-            "opcion0": "Mortal Kombat",
-            "opcion1": "Street Fighter",
-            "opcion2": "Tekken",
-            "opcion3": "Super Smash Bros"
-        },
-        {
             "imagen": "image/toxic.jpg",
             "pregunta": "¿Por que es tan toxico League of Legends?",
             "respuesta": 3,
@@ -236,15 +186,6 @@
             "opcion3": "15"
         },
         {
-            "imagen": "image/pokemon.jpg",
-            "pregunta": "¿Cuál es este Pokémon?",
-            "respuesta": 1,
-            "opcion0": "Vaporeon",
-            "opcion1": "Bulbasaur",
-            "opcion2": "Charmander",
-            "opcion3": "Pikachu"
-        },
-        {
             "imagen": "image/map.jpg",
             "pregunta": "¿Cual es el juego con el mapa mas grande existente?",
             "respuesta": 2,
@@ -254,24 +195,6 @@
             "opcion3": "Minecraft"
         },
         {
-            "imagen": "image/rockstar.jpg",
-            "pregunta": "¿Cual de estos videojuegos a desarrollado Rockstar?",
-            "respuesta": 1,
-            "opcion0": "The Witcher",
-            "opcion1": "Max Payne 3",
-            "opcion2": "Day Light",
-            "opcion3": "Far Cry"
-        },
-        {
-            "imagen": "image/xbox.jpg",
-            "pregunta": "¿Qué significa la luz roja en la consola Xbox 360?",
-            "respuesta": 2,
-            "opcion0": "Mandar a mantenimiento",
-            "opcion1": "Fallo al reproducir",
-            "opcion2": "Falta de ventilacion",
-            "opcion3": "Bateria agotada"
-        },
-        {
             "imagen": "image/grindear.jpg",
             "pregunta": "¿Qué significa grindear?",
             "respuesta": 0,
@@ -279,15 +202,6 @@
             "opcion1": "Ir a por material",
             "opcion2": "Molestar a otros",
             "opcion3": "Perder apropósito"
-        },
-        {
-            "imagen": "image/mariobros.jpg",
-            "pregunta": "¿En que año salio el primer juego protagonizado por Mario?",
-            "respuesta": 2,
-            "opcion0": "1978",
-            "opcion1": "1890",
-            "opcion2": "1983",
-            "opcion3": "1999"
         },
         {
             "imagen": "image/hollow-knight.jpg",
@@ -310,24 +224,6 @@
             "opcion3": "Colson"
         },
         {
-            "imagen": "image/hulk.jpg",
-            "pregunta": "¿Cual de estos personajes no es un vengador?",
-            "respuesta": 2,
-            "opcion0": "Hulk",
-            "opcion1": "Bruja Escarlata",
-            "opcion2": "Quicksilver",
-            "opcion3": "Viuda Negra"
-        },
-        {
-            "imagen": "image/thanos.jpg",
-            "pregunta": "¿Cuantos personajes han usando un guante con todas las gemas?",
-            "respuesta": 2,
-            "opcion0": "2",
-            "opcion1": "1",
-            "opcion2": "3",
-            "opcion3": "4"
-        },
-        {
             "imagen": "image/natasha.jpg",
             "pregunta": "¿Cuál es la nacionalidad de Natasha Romanoff?",
             "respuesta": 0,
@@ -337,18 +233,9 @@
             "opcion3": "Alemana"
         },
         {
-            "imagen": "image/referencia.jpg",
-            "pregunta": "¿Quien dice la famosa frase: Entendí la referencia?",
-            "respuesta": 2,
-            "opcion0": "Tony Stark",
-            "opcion1": "Deadpool",
-            "opcion2": "Capitan America",
-            "opcion3": "Thor"
-        },
-        {
             "imagen": "image/martillo.jpg",
             "pregunta": "¿Como se llama el martillo de Thor?",
-            "respuesta": 3,
+            "respuesta": 0,
             "opcion0": "Mjolnir",
             "opcion1": "Stormbreaker",
             "opcion2": "Jonathan",
@@ -400,15 +287,6 @@
             "opcion3": "54"
         },
         {
-            "imagen": "image/wandavision.jpg",
-            "pregunta": "¿En que comic se inspira la seria Wandavision?",
-            "respuesta": 2,
-            "opcion0": "The House",
-            "opcion1": "Wandapolis",
-            "opcion2": "The Vision",
-            "opcion3": "The WandaTV"
-        },
-        {
             "imagen": "image/stanlee.jpg",
             "pregunta": "¿Cuantos cameos a tenido Stan Lee?",
             "respuesta": 3,
@@ -416,15 +294,6 @@
             "opcion1": "72",
             "opcion2": "86",
             "opcion3": "96"
-        },
-        {
-            "imagen": "image/shangchi.jpg",
-            "pregunta": "¿Como se llama el pueblo oculto que aparece en Shang-Chi y los 10 anillos?",
-            "respuesta": 2,
-            "opcion0": "Ta Olei",
-            "opcion1": "Tao Lei",
-            "opcion2": "Ta Lo",
-            "opcion3": "Ta Oming"
         },
         {
             "imagen": "image/scott.jpg",
@@ -474,7 +343,7 @@
             "opcion3": "Poltergeist"
         },
         {
-            "imagen": "image/american.jpg",
+            "imagen": "image/american2.jpg",
             "pregunta": "¿Que personaje interpreto Christian Bale en American Psycho?",
             "respuesta": 0,
             "opcion0": "Patrick Bateman",
@@ -492,15 +361,6 @@
             "opcion3": "120 minutos"
         },
         {
-            "imagen": "image/pilgrim.jpg",
-            "pregunta": "¿A cuantos exes tuvo que derrotar Scott Pilgrim en Scott Pilgrim vs. the World?",
-            "respuesta": 1,
-            "opcion0": "6",
-            "opcion1": "7",
-            "opcion2": "9",
-            "opcion3": "5"
-        },
-        {
             "imagen": "image/oscars.jpg",
             "pregunta": "¿Que película gano el Oscar a mejor película en 2020?",
             "respuesta": 3,
@@ -510,31 +370,13 @@
             "opcion3": "Parásitos"
         },
         {
-            "imagen": "image/fragmentado.jpg",
-            "pregunta": "¿Cuantas personalidades tenia el protagonista de Fragmentado?",
-            "respuesta": 1,
-            "opcion0": "155",
-            "opcion1": "24",
-            "opcion2": "10",
-            "opcion3": "32"
-        },
-        {
-            "imagen": "image/oscars.jpg",
+            "imagen": "image/oscars2.jpg",
             "pregunta": "¿Cuantas películas argentinas han ganado el Oscar?",
             "respuesta": 0,
             "opcion0": "2",
             "opcion1": "4",
             "opcion2": "3",
             "opcion3": "5"
-        },
-        {
-            "imagen": "image/que-pelicula.jpg",
-            "pregunta": "¿A que película pertenece esta imagen?",
-            "respuesta": 1,
-            "opcion0": "Hasta el ultimo hombre",
-            "opcion1": "El Gran Pez",
-            "opcion2": "La milla verde",
-            "opcion3": "El Show de Truman"
         },
         {
             "imagen": "image/odiseaespacio.jpg",
@@ -546,31 +388,289 @@
             "opcion3": "Ridley Scott"
         },
         {
-            "imagen": "image/mouse.jpg",
-            "pregunta": "¿En que año fue la primer aparición del iconico personaje Mickey Mouse?",
-            "respuesta": 2,
-            "opcion0": "1918",
-            "opcion1": "1965",
-            "opcion2": "1928",
-            "opcion3": "1947"
-        },
-        {
-            "imagen": "image/cine.jpg",
-            "pregunta": "¿A quien se le a considerado el padre del cine?",
-            "respuesta": 1,
-            "opcion0": "Auguste y Louis Lumière",
-            "opcion1": "George Méliès",
-            "opcion2": "David Wark Griffith",
-            "opcion3": "Louis Le Prince"
-        },
-        {
-            "imagen": "image/oscars.jpg",
+            "imagen": "image/oscars3.jpg",
             "pregunta": "¿Cual a sido el actor que a ganado mas Oscar?",
             "respuesta": 2,
             "opcion0": "Jack Nicholson",
             "opcion1": "Daniel Day-Lewis",
             "opcion2": "Katherine Hepburn",
             "opcion3": "Meryl Streep"
+        }
+    ],
+    "Pokemon": [
+        {
+            "imagen": "image/ash.jpg",
+            "pregunta": "¿Cual fue el primer pokemon que capturo Ash?",
+            "respuesta": 2,
+            "opcion0": "Pikachu",
+            "opcion1": "Charmander",
+            "opcion2": "Caterpie",
+            "opcion3": "Bulbasaur"
+        },
+        {
+            "imagen": "image/johto.jpg",
+            "pregunta": "¿Como se llama el inicial de agua de la region de Johto?",
+            "respuesta": 0,
+            "opcion0": "Totodile",
+            "opcion1": "Squirtle",
+            "opcion2": "Piplut",
+            "opcion3": "Mudkip"
+        },
+        {
+            "imagen": "image/mega.jpg",
+            "pregunta": "¿En que generación se implemento la mega evolución?",
+            "respuesta": 0,
+            "opcion0": "La Sexta",
+            "opcion1": "La Séptima",
+            "opcion2": "La Octava",
+            "opcion3": "La Quinta"
+        },
+        {
+            "imagen": "image/salamance.jpg",
+            "pregunta": "¿A cual de estos tipos es débil un pokemon tipo dragon?",
+            "respuesta": 1,
+            "opcion0": "Roca",
+            "opcion1": "Dragon",
+            "opcion2": "Eléctrico",
+            "opcion3": "Planta"
+        },
+        {
+            "imagen": "image/eevee.jpg",
+            "pregunta": "¿Cuantas evoluciones tiene Eevee?",
+            "respuesta": 1,
+            "opcion0": "7",
+            "opcion1": "8",
+            "opcion2": "9",
+            "opcion3": "10"
+        },
+        {
+            "imagen": "image/mew.jpg",
+            "pregunta": "¿Cuantos pokemons hubo en la primer generación?",
+            "respuesta": 2,
+            "opcion0": "155",
+            "opcion1": "150",
+            "opcion2": "151",
+            "opcion3": "159"
+        },
+        {
+            "imagen": "image/pikachu.jpg",
+            "pregunta": "¿Cual es el numero de Pikachu en la pokedex?",
+            "respuesta": 0,
+            "opcion0": "25",
+            "opcion1": "1",
+            "opcion2": "14",
+            "opcion3": "17"
+        },
+        {
+            "imagen": "image/samurai.jpg",
+            "pregunta": "¿Cual de los siguientes pokemon tiene una evolución final inspirada en un samurai?",
+            "respuesta": 1,
+            "opcion0": "Charmander",
+            "opcion1": "Oshawott",
+            "opcion2": "Froakie",
+            "opcion3": "Popplio"
+        },
+        {
+            "imagen": "image/alola.jpg",
+            "pregunta": "¿Cuales juegos se desarrollan en Alola?",
+            "respuesta": 2,
+            "opcion0": "Espada y Escudo",
+            "opcion1": "X y Y",
+            "opcion2": "Sol y Luna",
+            "opcion3": "Escarlata y Purpura"
+        },
+        {
+            "imagen": "image/dragon.jpg",
+            "pregunta": "¿Cual de estos pokemons no es tipo dragon?",
+            "respuesta": 3,
+            "opcion0": "Garchomp",
+            "opcion1": "Rayquaza",
+            "opcion2": "Salamence",
+            "opcion3": "Charizard"
+        }
+    ],
+    "Javascript": [
+        {
+            "imagen": "image/funcion.jpg",
+            "pregunta": "¿Que es una funcion?",
+            "respuesta": 0,
+            "opcion0": "Bloque reutilizable que realiza una tarea",
+            "opcion1": "Filtro que verifica si la declaración es true o false",
+            "opcion2": "Bloque que realiza una acción en bucle",
+            "opcion3": "Parámetro que envía un dato aun bloque"
+        },
+        {
+            "imagen": "image/if.jpg",
+            "pregunta": "¿Que hace un if?",
+            "respuesta": 1,
+            "opcion0": "Controla la temperatura de la casa",
+            "opcion1": "Verifica si la declaración es false o true",
+            "opcion2": "Reordena un array de menor a mayor",
+            "opcion3": "Detiene la ejecución del programa"
+        },
+        {
+            "imagen": "image/cadena-texto.jpg",
+            "pregunta": "¿Como se declara una cadena de texto?",
+            "respuesta": 0,
+            "opcion0": "Encerrando con #",
+            "opcion1": "Con dos //",
+            "opcion2": "Encerrando con comillas",
+            "opcion3": "Colocando dos && al final"
+        },
+        {
+            "imagen": "image/if.jpg",
+            "pregunta": "¿Como agregas el valor de una variable a un texto?",
+            "respuesta": 0,
+            "opcion0": "Con ${}",
+            "opcion1": "Con $[]",
+            "opcion2": "Con &{}",
+            "opcion3": "Con %[]"
+        },
+        {
+            "imagen": "image/funcion.jpg",
+            "pregunta": "¿Que es DOM?",
+            "respuesta": 0,
+            "opcion0": "Document Object Model",
+            "opcion1": "Document Octopus Model",
+            "opcion2": "Data Objective Multiple",
+            "opcion3": "Development Object Model"
+        },
+        {
+            "imagen": "image/cadena-texto.jpg",
+            "pregunta": "¿Cómo se utiliza una condición en Js?",
+            "respuesta": 2,
+            "opcion0": "Con else/if o for",
+            "opcion1": "Con for/white",
+            "opcion2": "Con if/else o switch",
+            "opcion3": "Con switch o for"
+        },
+        {
+            "imagen": "image/funcion.jpg",
+            "pregunta": "¿Cómo se utiliza un bucle en Js?",
+            "respuesta": 3,
+            "opcion0": "Con if/else",
+            "opcion1": "Con switch o space",
+            "opcion2": "Con return o white",
+            "opcion3": "Con for o white"
+        },
+        {
+            "imagen": "image/if.jpg",
+            "pregunta": "¿Para que se usa el DOM en Js?",
+            "respuesta": 0,
+            "opcion0": "Para interactuar con los elementos de HTML",
+            "opcion1": "Para invocar variables",
+            "opcion2": "Para detener el tiempo",
+            "opcion3": "Para interactuar con la API"
+        },
+        {
+            "imagen": "image/cadena-texto.jpg",
+            "pregunta": "¿Como se declara una array en Js?",
+            "respuesta": 2,
+            "opcion0": "Con dos {}",
+            "opcion1": "Con dos ()",
+            "opcion2": "Con dos []",
+            "opcion3": "Con dos ${}"
+        },
+        {
+            "imagen": "image/funcion.jpg",
+            "pregunta": "¿Que hace return?",
+            "respuesta": 1,
+            "opcion0": "Retorna un bucle",
+            "opcion1": "Retorna un valor",
+            "opcion2": "Retorna solo números",
+            "opcion3": "Retorna un bug"
+        }
+    ],
+    "Mitologia": [
+        {
+            "imagen": "image/cronos.jpg",
+            "pregunta": "¿Quien es cronos?",
+            "respuesta": 0,
+            "opcion0": "El padre de los dioses griegos",
+            "opcion1": "Hermano de Zeus",
+            "opcion2": "El padre de los dioses egipcios",
+            "opcion3": "El hijo de afrodita"
+        },
+        {
+            "imagen": "image/chinese.jpg",
+            "pregunta": "¿Que animal mitico es el emblema de China?",
+            "respuesta": 1,
+            "opcion0": "El phoenix",
+            "opcion1": "El dragon",
+            "opcion2": "El kitsune",
+            "opcion3": "El oni"
+        },
+        {
+            "imagen": "image/gorgone.jpg",
+            "pregunta": "¿Cual de estos heroes decapito a la gorgona?",
+            "respuesta": 0,
+            "opcion0": "Perseo",
+            "opcion1": "Aquiles",
+            "opcion2": "Teseo",
+            "opcion3": "Dionisio"
+        },
+        {
+            "imagen": "image/vino.jpg",
+            "pregunta": "¿Cual es el dios griego del vino?",
+            "respuesta": 0,
+            "opcion0": "Dionisio",
+            "opcion1": "Hermes",
+            "opcion2": "Apolo",
+            "opcion3": "Afrodita"
+        },
+        {
+            "imagen": "image/egipto.jpg",
+            "pregunta": "¿Que dios egipcio tiene una cabeza de chacal?",
+            "respuesta": 3,
+            "opcion0": "Ra",
+            "opcion1": "Osiris",
+            "opcion2": "Amon",
+            "opcion3": "Anubis"
+        },
+        {
+            "imagen": "image/deseos.jpg",
+            "pregunta": "¿Cual de estos seres es capaz de conceder deseos?",
+            "respuesta": 2,
+            "opcion0": "Kitsune",
+            "opcion1": "Medusa",
+            "opcion2": "Djinn",
+            "opcion3": "Kappa"
+        },
+        {
+            "imagen": "image/hera.jpg",
+            "pregunta": "¿Quien es Hera?",
+            "respuesta": 0,
+            "opcion0": "La diosa del matrimonio",
+            "opcion1": "La diosa del invierno",
+            "opcion2": "La diosa del verano",
+            "opcion3": "La diosa de la caza"
+        },
+        {
+            "imagen": "image/olimpo.jpg",
+            "pregunta": "¿Cuales son las 3 diosas griegas virgenes?",
+            "respuesta": 2,
+            "opcion0": "Hera, Atenea y Artemisa",
+            "opcion1": "Hera, Artemisa y Afrodita",
+            "opcion2": "Hestia, Artemisa y Atenea",
+            "opcion3": "Hestia, Afrodita y Hera"
+        },
+        {
+            "imagen": "image/hercules.jpg",
+            "pregunta": "¿Como fallecio Hercules?",
+            "respuesta": 2,
+            "opcion0": "Por vejez",
+            "opcion1": "Atravesado por un cuerno maldito",
+            "opcion2": "Envenenado con una tunica",
+            "opcion3": "Peleando con un dios"
+        },
+        {
+            "imagen": "image/rayo.jpg",
+            "pregunta": "¿Quien es el dios nordico del trueno?",
+            "respuesta": 1,
+            "opcion0": "Zeus",
+            "opcion1": "Thor",
+            "opcion2": "Odin",
+            "opcion3": "Poseidon"
         }
     ]
 }

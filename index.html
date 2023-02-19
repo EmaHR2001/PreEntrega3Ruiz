@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8c7ff1173b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="" href="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Trivialis</title>
     <meta name="description" content="">
@@ -15,16 +16,18 @@
 <body>
     <header id="inicio">
         <h1>Trivialis</h1>
-        <div>
-            <button class="boton boton__jugar">Jugar</button>
-            <button class="boton boton__ranking">Ranking</button>
+        <div class="boton__content">
+            <button class="boton boton__active boton__red boton__inicio">Jugar</button>
+            <button class="boton boton__active boton__blue boton__inicio">Ranking</button>
         </div>
     </header>
 
     <main>
         <section id="selectModo" class="modos">
-            <button class="boton boton__volver">Atras</button>
-            <h2 class="ff-category">Selecciona el modo de juego</h2>
+            <div class="top">
+                <button class="boton boton__active boton__blue boton__volver">Atras</button>
+                <h2 class="ff-category">Selecciona el modo de juego</h2>
+            </div>
             <div class="card__content">
                 <div class="card__modo">
                     <div class="card__front">
@@ -48,8 +51,7 @@
                     </div>
                     <div class="card__back">
                         <p class="deco deco__top">Contratiempo</p>
-                        <p class="info ff-category">Elige 7 categorías y supera 100 preguntas aleatorias antes de que el
-                            tiempo se acabe.</p>
+                        <p class="info ff-category">Elige 3 categorías y supera las 30 preguntas antes de que el tiempo se acabe.</p>
                     </div>
                 </div>
                 <div class="card__modo">
@@ -61,110 +63,74 @@
                     </div>
                     <div class="card__back">
                         <p class="deco deco__top">Supervivencia</p>
-                        <p class="info ff-category">Elige 7 categorías y supera 100 preguntas aleatorias antes de que el
+                        <p class="info ff-category">Elige 3 categorías y supera 30 preguntas antes de que el
                             tiempo se acabe sin perder tus 3 vidas.</p>
                     </div>
                 </div>
             </div>
-            <button id="buttonModo" class="boton boton__desactivado">Elige</button>
+            <div class="boton__content">
+                <button id="buttonModo" class="boton boton__desactivado">Elige</button>
+            </div>
         </section>
 
         <section id="selectCat" class="categorias">
-            <button class="boton boton__volver">Atras</button>
-            <h2 class="ff-category">Selecciona las categorías</h2>
-            <div class="mover mover__left"></div>
-            <div id="carrousel" class="cat__content">
-                <div class="card__category">
-                    <p class="deco deco__top">Animales</p>
-                    <img class="fondo" src="./image/categoria__animales.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
-                </div>
-                <div class="card__category">
-                    <p class="deco deco__top">Avengers</p>
-                    <img class="fondo" src="./image/categoria__avengers.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
-                </div>
-                <div class="card__category">
-                    <p class="deco deco__top">Cine</p>
-                    <img class="fondo" src="./image/categoria__cine.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
-                </div>
-                <div class="card__category">
-                    <p class="deco deco__top">Historia</p>
-                    <img class="fondo" src="./image/categoria__historia.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
-                </div>
-                <div class="card__category">
-                    <p class="deco deco__top">Juegos</p>
-                    <img class="fondo" src="./image/categoria__juegos.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
-                </div>
-                <div class="card__category">
-                    <p class="deco deco__top">Mitología</p>
-                    <img class="fondo" src="./image/categoria__mitologia.jpg">
-                    <img class="borde" src="./image/carta__espalda__beta.png.png">
-                    <p class="deco deco__bot">Trivialis</p>
+            <div class="top">
+                <button class="boton boton__active boton__blue boton__volver">Atras</button>
+                <h2 class="ff-category">Selecciona las categorías</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-nav carousel-nav-left"></div>
+                <div class="carousel-nav carousel-nav-right"></div>
+                <div id="carrousel" class="carousel">
                 </div>
             </div>
+
             <div class="mover mover__right"></div>
-            <button class="boton boton__jugar">Comenzar</button>
+
+            <div class="bot">
+                <button class="boton boton__jugar">Comenzar</button>
+            </div>
         </section>
 
         <section id="game" class="juego">
             <div class="top">
                 <div class="tiempo">
                     <img src="/image/icons8-sand-timer-100.png">
-                    <p class="ff-quest">180</p>
+                    <p id="reloj" class="ff-quest">180</p>
                 </div>
-                <h2 class="ff-category">Supervivencia</h2>
-                <div class="vida">
-                    <img class="heart" src="/image/icons8-heart-65.png">
-                    <img src="/image/icons8-heart-65.png">
-                    <img src="/image/icons8-heart-65.png">
+                <h2 id="modoSeleccionado" class="ff-category">Supervivencia</h2>
+                <div id="corazones" class="vida">
+                    <img class="heart corazon" src="/image/icons8-heart-65.png">
+                    <img class="heart corazon" src="/image/icons8-heart-65.png">
+                    <img class="heart corazon" src="/image/icons8-heart-65.png">
                 </div>
             </div>
-            <div class="cartas">
-                <div class="card__game">
-                    <div class="card__front">
-                        <div class="num">
-                            <h4 class="ff-category">15</h4>
-                        </div>
-                        <img class="img__quest" src="./image/american2.jpg">
-                        <img class="borde" src="./image/cartaprueba2.png">
-                        <div class="quest">
-                            <h3 class="ff-category">Cine</h3>
-                            <p class="ff-category">Que personaje interpreto?</p>
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <p class="deco deco__top">Supervivencia</p>
-                        <img class="fondo" src="./image/fondo__modo3.jpg">
-                        <img class="borde" src="./image/carta__espalda__beta.png.png">
-                        <p class="deco deco__bot">Trivialis</p>
-                    </div>
+            <div class="card__game">
+                <div class="num">
+                    <h4 id="gameCardNum" class="ff-category">15</h4>
+                </div>
+                <img id="gameCardImg" class="img__quest" src="">
+                <img class="borde" src="./image/cartaprueba2.png">
+                <div class="quest">
+                    <p id="gameCardQuest" class="ff-category">Que personaje interpreto?</p>
                 </div>
             </div>
             <div class="opciones">
-                <div class="opcion">
+                <div class="opciones__content">
                     <i class="fa-solid fa-dice-one"></i>
-                    <button class="ff-category">Pacolepsias</button>
+                    <button class="ff-category opcion">Pacolepsias</button>
                 </div>
-                <div class="opcion">
+                <div class="opciones__content">
                     <i class="fa-solid fa-dice-two"></i>
-                    <button class="ff-category">Pacolepsias</button>
+                    <button class="ff-category opcion">Pacolepsias</button>
                 </div>
-                <div class="opcion">
+                <div class="opciones__content">
                     <i class="fa-solid fa-dice-three"></i>
-                    <button class="ff-category">Pacolepsias</button>
+                    <button class="ff-category opcion">Pacolepsias</button>
                 </div>
-                <div class="opcion">
+                <div class="opciones__content">
                     <i class="fa-solid fa-dice-four"></i>
-                    <button class="ff-category">Pacolepsias</button>
+                    <button class="ff-category opcion">Pacolepsias</button>
                 </div>
             </div>
         </section>
