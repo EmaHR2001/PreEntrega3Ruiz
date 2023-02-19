@@ -511,7 +511,7 @@
         {
             "imagen": "image/cadena-texto.jpg",
             "pregunta": "¿Como se declara una cadena de texto?",
-            "respuesta": 0,
+            "respuesta": 2,
             "opcion0": "Encerrando con #",
             "opcion1": "Con dos //",
             "opcion2": "Encerrando con comillas",
